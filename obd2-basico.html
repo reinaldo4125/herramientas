@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tutorial: Leer códigos OBD2 paso a paso. Guía básica para principiantes y técnicos nuevos.">
+    <title>Tutorial: Leer Códigos OBD2 | Herramientas Automotrices Pro</title>
+    <link rel="canonical" href="https://herramientasautomotricespro.com/obd2-basico.html">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-520054963"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-520054963');
+    </script>
+    <!-- End Google Analytics 4 -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <a class="back-link" href="index.html">&larr; Volver al inicio</a>
+                <div class="hero-kicker">Tutorial 2026 • Diagnóstico</div>
+                <h1>Tutorial: Leer Códigos OBD2 Paso a Paso</h1>
+                <p>Aprende desde cero cómo conectar un scanner, interpretar códigos de error y borrar fallas. Guía completa para principiantes.</p>
+                <div class="hero-meta">
+                    <span><i class="fa-solid fa-scroll"></i> Códigos OBD2</span>
+                    <span><i class="fa-solid fa-graduation-cap"></i> Para principiantes</span>
+                    <span><i class="fa-solid fa-check-double"></i> Paso a paso</span>
+                </div>
+                <p class="header-disclosure">
+                    Como afiliado de Amazon, este sitio puede generar comisiones por compras que califican.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="article-detail-section">
+        <div class="container">
+            <div class="article-detail-grid">
+                <main class="article-main">
+                    <div class="article-meta-detail">
+                        <span><i class="fa-solid fa-calendar"></i> Feb 12, 2026</span>
+                        <span><i class="fa-solid fa-clock"></i> 6 min lectura</span>
+                        <span><i class="fa-solid fa-user"></i> Herramientas Pro</span>
+                    </div>
+
+                    <h2>¿Qué es OBD2 y por qué es importante?</h2>
+                    <p>
+                        OBD2 (On-Board Diagnostics 2) es un sistema estándar en vehículos desde 1996 que monitorea fallas de motor, emisiones y otros sistemas.
+                        Cuando algo no está bien, genera un código de error que tu scanner puede leer. Aprender a interpretarlos es fundamental para cualquier técnico.
+                    </p>
+
+                    <h3>Paso 1: Obtén el equipo necesario</h3>
+                    <div class="steps-box">
+                        <p><strong>✅ Scanner OBD2</strong> (Autel, Launch, etc.)</p>
+                        <p><strong>✅ Vehículo con sistema OBD2</strong> (año 1996 en adelante)</p>
+                        <p><strong>✅ Puerto OBD2 accesible</strong> (normalmente bajo el tablero, lado conductor)</p>
+                    </div>
+
+                    <h3>Paso 2: Ubica el puerto OBD2</h3>
+                    <p>
+                        El puerto OBD2 es un conector rectangular, típicamente ubicado:
+                    </p>
+                    <ul>
+                        <li>Bajo el tablero del lado del conductor</li>
+                        <li>Cerca del volante</li>
+                        <li>En posición horizontal o vertical</li>
+                    </ul>
+
+                    <h3>Paso 3: Conecta el scanner</h3>
+                    <div class="steps-box">
+                        <p><strong>1.</strong> Asegúrate que el contacto esté APAGADO</p>
+                        <p><strong>2.</strong> Conecta el cable del scanner al puerto OBD2</p>
+                        <p><strong>3.</strong> Enciende el contacto (sin arrancar el motor)</p>
+                        <p><strong>4.</strong> Espera que el scanner se inicialize</p>
+                    </div>
+
+                    <h3>Paso 4: Lee los códigos de error</h3>
+                    <p>
+                        Una vez conectado, el scanner mostrará:
+                    </p>
+                    <ul>
+                        <li><strong>P-codes (Powertrain):</strong> Motor, transmisión, sistema de emisiones. Los más comunes.</li>
+                        <li><strong>B-codes (Body):</strong> Sistemas como airbags, puertas, asientos.</li>
+                        <li><strong>C-codes (Chassis):</strong> Frenos, ABS, dirección asistida.</li>
+                        <li><strong>U-codes (Network):</strong> Problemas de comunicación entre módulos.</li>
+                    </ul>
+
+                    <h3>Paso 5: Interpreta el código</h3>
+                    <p>
+                        Ejemplo: <strong>P0301</strong>
+                    </p>
+                    <ul>
+                        <li><strong>P:</strong> Powertrain (motor/transmisión)</li>
+                        <li><strong>0:</strong> Código genérico OBD2 estándar</li>
+                        <li><strong>3:</strong> Sistema de ignición/combustión</li>
+                        <li><strong>01:</strong> Cilindro 1 (fallo de encendido)</li>
+                    </ul>
+
+                    <h3>Paso 6: Borra los códigos</h3>
+                    <div class="steps-box">
+                        <p><strong>Importante:</strong> Solo borra códigos DESPUÉS de haber solucionado el problema.</p>
+                        <p>Tu scanner tendrá opción "Clear Codes" o "Erase". Selecciónala y confirma.</p>
+                    </div>
+
+                    <h3>Guía rápida de códigos comunes</h3>
+                    <div class="specs-table">
+                        <div class="spec-row">
+                            <span class="spec-label">P0101</span>
+                            <span>MAF (sensor de flujo aire) - Típicamente sucio o defectuoso.</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">P0300</span>
+                            <span>Fallos aleatorios de encendido - Bujías, bobinas, inyectores.</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">P0420</span>
+                            <span>Catalizador ineficiente - Generalmente desgaste.</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">P0505</span>
+                            <span>RPM inestables - Problemas de ralentí.</span>
+                        </div>
+                    </div>
+
+                    <h3>Tips finales</h3>
+                    <ul>
+                        <li>Los mismos códigos pueden tener causas diferentes según marca/modelo.</li>
+                        <li>Usa internet para researchar específicamente el código + marca del vehículo.</li>
+                        <li>No todos los códigos indican grandes problemas (algunos son avisos).</li>
+                        <li>Siempre verifica el vehicle que el problema esté realmente resuelto antes de borrar.</li>
+                    </ul>
+
+                    <div class="article-cta">
+                        <a href="index.html#herramientas/scanner" class="cta-button">Ver Scanners OBD2</a>
+                    </div>
+                </main>
+
+                <aside class="article-sidebar">
+                    <div class="sidebar-card">
+                        <h3>En este tutorial</h3>
+                        <ul>
+                            <li><a href="#paso1">Obtén equipo</a></li>
+                            <li><a href="#paso2">Ubica puerto</a></li>
+                            <li><a href="#paso3">Conecta</a></li>
+                            <li><a href="#paso4">Lee códigos</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-card">
+                        <h3>Relacionado</h3>
+                        <ul>
+                            <li><a href="comparativas.html">Comparativas Scanners</a></li>
+                            <li><a href="index.html#herramientas">Todas las herramientas</a></li>
+                            <li><a href="autel-vs-launch.html">Autel vs Launch</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Herramientas Automotrices • Contenido informativo y enlaces de afiliado.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
