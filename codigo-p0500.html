@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía técnica sobre el código OBD2 P0500 (Vehicle Speed Sensor 'A' Malfunction): qué es el sensor VSS, síntomas en velocímetro y transmisión, pruebas y solución.">
+    <title>Código P0500: Falla en Sensor de Velocidad (VSS) | Guía Técnica OBD2</title>
+    <link rel="canonical" href="https://herramientasautomotricespro.com/codigo-p0500.html">
+    <meta property="og:url" content="https://herramientasautomotricespro.com/codigo-p0500.html">
+    <link rel="stylesheet" href="css/tailwind.min.css?v=3.0">
+    <link rel="stylesheet" href="css/styles.css?v=3.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Diagnóstico y Solución del Código DTC OBD2 P0500",
+      "description": "Explicación detallada del código P0500 referente a la señal del sensor de velocidad del vehículo (Vehicle Speed Sensor A).",
+      "author": {
+        "@type": "Organization",
+        "name": "Herramientas Automotrices Pro"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Herramientas Automotrices Pro",
+        "logo": "https://herramientasautomotricespro.com/assets/images/Hero.png"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cómo afecta el sensor VSS al cambio de marchas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La computadora de la transmisión (TCM) utiliza la señal de velocidad para saber cuándo cambiar de marcha. Si falta señal, la caja cambia con retraso, produce golpes bruscos o entra en modo de protección (Limp Mode)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Dónde está ubicado el sensor VSS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generalmente se encuentra en la carcasa exterior de la transmisión automática/manual o en el diferencial, midiendo el giro del eje de salida."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans pb-20 md:pb-10">
+    <header class="bg-slate-900 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-orange-500 flex items-center gap-2">
+                <i class="fas fa-wrench"></i> Herramientas Automotrices Pro
+            </a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-orange-400">Inicio</a>
+                <a href="scanners.html" class="hover:text-orange-400">Escáneres</a>
+                <a href="codigos-obd2.html" class="text-orange-400 font-bold">Códigos DTC</a>
+                <a href="comparativas.html" class="hover:text-orange-400">Comparativas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-10">
+        <div class="mb-6 text-sm text-slate-500">
+            <a href="index.html" class="hover:underline">Inicio</a> &gt; 
+            <a href="codigos-obd2.html" class="hover:underline">Códigos OBD2</a> &gt; 
+            <span class="text-slate-800 font-semibold">Código P0500</span>
+        </div>
+
+        <article class="bg-white p-6 md:p-8 rounded-xl shadow-md border border-slate-200">
+            <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Sensores de Velocidad</span>
+            <h1 class="text-3xl font-extrabold text-slate-900 mt-3 mb-4">Código P0500: Mal Funcionamiento del Sensor de Velocidad del Vehículo (VSS 'A')</h1>
+            
+            <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-8">
+                <h3 class="font-bold text-blue-900 flex items-center gap-2 mb-2 text-base">
+                    <i class="fas fa-stopwatch text-blue-600"></i> Diagnóstico en 30 Segundos: Código P0500
+                </h3>
+                <p class="text-sm text-blue-950 leading-relaxed">
+                    El código <strong>P0500</strong> significa que la computadora (ECM/TCM) no recibe señal de velocidad del vehículo o la lectura es incoherente con el sensor ABS/RPM. Síntomas típicos: <strong>velocímetro no funciona</strong>, cambios erráticos en transmisión automática y desactivación del control de crucero.
+                </p>
+            </div>
+
+            <h2 class="text-xl font-bold text-slate-900 mb-3 border-b pb-2">Síntomas Habituales</h2>
+            <ul class="list-disc pl-6 space-y-2 text-slate-700 mb-8">
+                <li>Aguja del velocímetro inerte (en 0 km/h o mph) o saltando erráticamente.</li>
+                <li>Luz Check Engine encendida y luz ABS/TCS activa.</li>
+                <li>Golpes o retraso en los cambios de la transmisión automática.</li>
+                <li>Control crucero (Cruise Control) inoperativo.</li>
+            </ul>
+
+            <h2 class="text-xl font-bold text-slate-900 mb-3 border-b pb-2">Causas Frecuentes del Código P0500</h2>
+            <div class="grid md:grid-cols-2 gap-4 mb-8">
+                <div class="p-4 bg-slate-50 border rounded-lg">
+                    <h3 class="font-bold text-slate-800 text-base mb-1"><i class="fas fa-tachometer-alt text-blue-500"></i> Sensor VSS Averiado</h3>
+                    <p class="text-sm text-slate-600">Sensor electromagnético o de efecto Hall con bobinado abierto o punta magnética desgastada.</p>
+                </div>
+                <div class="p-4 bg-slate-50 border rounded-lg">
+                    <h3 class="font-bold text-slate-800 text-base mb-1"><i class="fas fa-plug text-amber-500"></i> Cableado o Conector Sulfatado</h3>
+                    <p class="text-sm text-slate-600">Arnés expuesto a calor de transmisión o salpicaduras de aceite con cables partidos o pines oxidados.</p>
+                </div>
+                <div class="p-4 bg-slate-50 border rounded-lg">
+                    <h3 class="font-bold text-slate-800 text-base mb-1"><i class="fas fa-cogs text-emerald-500"></i> Engranaje de Transmisión Dañado</h3>
+                    <p class="text-sm text-slate-600">El piñón de plástico de accionamiento en la caja de cambios desgastado o sin dientes.</p>
+                </div>
+                <div class="p-4 bg-slate-50 border rounded-lg">
+                    <h3 class="font-bold text-slate-800 text-base mb-1"><i class="fas fa-car-crash text-purple-500"></i> Módulo ABS / ECM</h3>
+                    <p class="text-sm text-slate-600">Falla de comunicación CAN Bus entre el módulo ABS (que lee ruedas) y el tablero/computadora.</p>
+                </div>
+            </div>
+
+            <!-- Banner Recomendado -->
+            <div class="bg-orange-50 border border-orange-200 p-6 rounded-xl flex flex-col md:flex-row items-center justify-between gap-4">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Visualiza datos de velocidad en vivo con escáner profesional</h3>
+                    <p class="text-sm text-slate-600">Monitorea la señal VSS en tiempo real mientras conduces para descartar fallos de cableado.</p>
+                </div>
+                <a href="https://www.amazon.es/s?k=Launch+CRP123X+Pro+escaner+automotriz&tag=herramien044f-21" target="_blank" rel="sponsored nofollow noopener" class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-5 py-3 rounded-lg text-sm shadow-md transition whitespace-nowrap">
+                    Ver Launch CRP123X en Amazon <i class="fas fa-external-link-alt ml-1"></i>
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-slate-900 border-t border-slate-700 p-3 flex items-center justify-between z-50 shadow-lg">
+        <div class="text-white text-xs">
+            <span class="font-bold text-orange-400 block">¿Lectura VSS en vivo?</span>
+            <span>Escáner OBD2 Recomendado</span>
+        </div>
+        <a href="https://www.amazon.es/s?k=Launch+CRP123X+Pro+escaner+automotriz&tag=herramien044f-21" target="_blank" rel="sponsored nofollow noopener" class="bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2 px-3 rounded shadow">
+            Ver en Amazon <i class="fas fa-arrow-right ml-1"></i>
+        </a>
+    </div>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm mt-12 border-t border-slate-800">
+        <p>© 2026 Herramientas Automotrices Pro • Guías de diagnóstico y herramientas profesionales</p>
+    </footer>
+</body>
+</html>

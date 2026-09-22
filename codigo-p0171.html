@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía completa sobre el código de falla OBD2 P0171 (System Too Lean Bank 1): causas, síntomas de mezcla pobre, diagnóstico con escáner y cómo solucionarlo.">
+    <title>Código P0171: Mezcla Pobre Banco 1 | Causas y Solución OBD2</title>
+    <link rel="canonical" href="https://herramientasautomotricespro.com/codigo-p0171.html">
+    <meta property="og:url" content="https://herramientasautomotricespro.com/codigo-p0171.html">
+    <link rel="stylesheet" href="css/tailwind.min.css?v=3.0">
+    <link rel="stylesheet" href="css/styles.css?v=3.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Diagnóstico y Solución del Código DTC OBD2 P0171",
+      "description": "Explicación detallada del código P0171 (System Too Lean Bank 1), causas por fugas de vacío, sensor MAF o inyección.",
+      "author": {
+        "@type": "Organization",
+        "name": "Herramientas Automotrices Pro"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Herramientas Automotrices Pro",
+        "logo": "https://herramientasautomotricespro.com/assets/images/Hero.png"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué significa exactamente mezcla pobre en el Banco 1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Significa que la relación aire/combustible tiene un exceso de oxígeno y falta de gasolina en el lado del motor que alberga el cilindro #1."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo saber si el P0171 es por fuga de vacío o por el sensor MAF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Con un escáner en datos en vivo, revisa los ajustes de combustible (LTFT): si el ajuste positivo disminuye al acelerar a 2500 RPM, es fuga de vacío. Si el ajuste positivo empeora al acelerar, el sensor MAF o la bomba de gasolina están fallando."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans pb-20 md:pb-10">
+    <header class="bg-slate-900 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-orange-500 flex items-center gap-2">
+                <i class="fas fa-wrench"></i> Herramientas Automotrices Pro
+            </a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-orange-400">Inicio</a>
+                <a href="scanners.html" class="hover:text-orange-400">Escáneres</a>
+                <a href="codigos-obd2.html" class="text-orange-400 font-bold">Códigos DTC</a>
+                <a href="comparativas.html" class="hover:text-orange-400">Comparativas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-10">
+        <div class="mb-6 text-sm text-slate-500">
+            <a href="index.html" class="hover:underline">Inicio</a> &gt; 
+            <a href="codigos-obd2.html" class="hover:underline">Códigos OBD2</a> &gt; 
+            <span class="text-slate-800 font-semibold">Código P0171</span>
+        </div>
+
+        <article class="bg-white p-6 md:p-8 rounded-xl shadow-md border border-slate-200">
+            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Sistema de Inyección / Aire</span>
+            <h1 class="text-3xl font-extrabold text-slate-900 mt-3 mb-4">Código P0171: Mezcla Demasiado Pobre en Banco 1 (System Too Lean)</h1>
+            
+            <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-8">
+                <h3 class="font-bold text-blue-900 flex items-center gap-2 mb-2 text-base">
+                    <i class="fas fa-stopwatch text-blue-600"></i> Diagnóstico en 30 Segundos: Código P0171
+                </h3>
+                <p class="text-sm text-blue-950 leading-relaxed">
+                    El código <strong>P0171</strong> indica que el motor recibe demasiado aire no medido o insuficiente gasolina. La causa #1 son <strong>fugas de vacío en mangueras o junta de admisión</strong>, seguidas por un <strong>sensor MAF sucio</strong> o baja presión de combustible.
+                </p>
+            </div>
+            <p class="text-slate-600 leading-relaxed mb-6">El código <strong>P0171</strong> indica que la computadora del motor (PCM) ha detectado demasiada presencia de aire o muy poco combustible en la cámara de combustión del Banco 1 del motor.</p>
+
+            <div class="bg-slate-900 text-white p-5 rounded-lg mb-8 border-l-4 border-amber-500">
+                <h3 class="text-lg font-bold text-amber-400 mb-2"><i class="fas fa-exclamation-triangle"></i> ¿Qué provoca conducir con código P0171?</h3>
+                <p class="text-sm text-slate-300">Una mezcla pobre eleva la temperatura interna de los cilindros, lo que puede provocar picado de bielas (cascabeleo), quemado de válvulas o daños en los pistones a mediano plazo.</p>
+            </div>
+
+            <h2 class="text-xl font-bold text-slate-900 mb-3 border-b pb-2">Síntomas Típicos del P0171</h2>
+            <ul class="list-disc pl-6 space-y-2 text-slate-700 mb-8">
+                <li>Luz Check Engine encendida de forma continua.</li>
+                <li>Ralentí (marcha mínima) inestable o tembloroso.</li>
+                <li>Dificultad o retardo al acelerar de golpe (vacilación).</li>
+                <li>Cascabeleo o detonación metálica bajo carga.</li>
+            </ul>
+
+            <h2 class="text-xl font-bold text-slate-900 mb-3 border-b pb-2">Causas Frecuentes del Código P0171</h2>
+            <div class="grid md:grid-cols-2 gap-4 mb-8">
+                <div class="p-4 bg-slate-50 border rounded-lg">
+                    <h3 class="font-bold text-slate-800 text-base mb-1"><i class="fas fa-wind text-blue-500"></i> Fugas de Vacío</h3>
+                    <p class="text-sm text-slate-600">Entrada no medida de aire por mangueras de vacío rotas, junta del múltiple de admisión o válvula PCV dañada.</p>
+                </div>
+                <div class="p-4 bg-slate-50 border rounded-lg">
+                    <h3 class="font-bold text-slate-800 text-base mb-1"><i class="fas fa-microchip text-emerald-500"></i> Sensor MAF Contaminado</h3>
+                    <p class="text-sm text-slate-600">El hilo de filamento del sensor de masa de aire sucio reporta menos aire del que realmente ingresa.</p>
+                </div>
+                <div class="p-4 bg-slate-50 border rounded-lg">
+                    <h3 class="font-bold text-slate-800 text-base mb-1"><i class="fas fa-gas-pump text-orange-500"></i> Baja Presión de Combustible</h3>
+                    <p class="text-sm text-slate-600">Filtro de gasolina obstruido, bomba de gasolina débil o inyectores tapados.</p>
+                </div>
+                <div class="p-4 bg-slate-50 border rounded-lg">
+                    <h3 class="font-bold text-slate-800 text-base mb-1"><i class="fas fa-wave-square text-purple-500"></i> Sensor O2 Descalibrado</h3>
+                    <p class="text-sm text-slate-600">Sensor de oxígeno delantero (Banco 1, Sensor 1) defectuoso enviando lectura falsa de aire seco.</p>
+                </div>
+            </div>
+
+            <h2 class="text-xl font-bold text-slate-900 mb-4 border-b pb-2">Preguntas Frecuentes (FAQ)</h2>
+            <div class="space-y-4 mb-8">
+                <div class="border border-slate-200 rounded-lg p-4 bg-slate-50">
+                    <h3 class="font-bold text-slate-800 mb-1">¿Qué significa exactamente mezcla pobre en el Banco 1?</h3>
+                    <p class="text-sm text-slate-600">Significa que la relación aire/combustible tiene un exceso de oxígeno y falta de gasolina en el lado del motor que alberga el cilindro #1.</p>
+                </div>
+                <div class="border border-slate-200 rounded-lg p-4 bg-slate-50">
+                    <h3 class="font-bold text-slate-800 mb-1">¿Cómo saber si el P0171 es por fuga de vacío o por el sensor MAF?</h3>
+                    <p class="text-sm text-slate-600">Con un escáner en datos en vivo, revisa los ajustes de combustible (LTFT): si el ajuste positivo disminuye al acelerar a 2500 RPM, es fuga de vacío. Si el ajuste positivo empeora al acelerar, el sensor MAF o la bomba de gasolina están fallando.</p>
+                </div>
+            </div>
+
+            <div class="bg-orange-50 border border-orange-200 p-6 rounded-xl flex flex-col md:flex-row items-center justify-between gap-4">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Diagnostica lecturas STFT / LTFT con un buen escáner OBD2</h3>
+                    <p class="text-sm text-slate-600">Revisa los ajustes de combustible a corto y largo plazo con escáneres multisistema.</p>
+                </div>
+                <a href="scanners.html" class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-5 py-3 rounded-lg text-sm shadow-md transition whitespace-nowrap">
+                    Ver Escáneres Recomendados →
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-slate-900 border-t border-slate-700 p-3 flex items-center justify-between z-50 shadow-lg">
+        <div class="text-white text-xs">
+            <span class="font-bold text-orange-400 block">¿Diagnosticar P0171?</span>
+            <span>Escáner OBD2 Recomendado</span>
+        </div>
+        <a href="scanners.html" class="bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2 px-3 rounded shadow">
+            Ver Escáneres <i class="fas fa-arrow-right ml-1"></i>
+        </a>
+    </div>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm mt-12 border-t border-slate-800">
+        <p>© 2026 Herramientas Automotrices Pro • Guías de diagnóstico y herramientas profesionales</p>
+    </footer>
+</body>
+</html>

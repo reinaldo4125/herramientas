@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía técnica del código OBD2 P0101 (Sensor MAF rango/rendimiento). Síntomas, causas comunes, fugas de aire y cómo solucionarlo con escáner y limpiador MAF.">
+    <title>Código P0101: Sensor MAF Rango / Rendimiento (Solución 2026)</title>
+    <link rel="canonical" href="https://herramientasautomotricespro.com/codigo-p0101.html">
+    <meta property="og:title" content="Código P0101: Sensor MAF Rango y Rendimiento | Diagnóstico OBD2">
+    <meta property="og:description" content="Aprende a diagnosticar y solucionar el código P0101 (Mass Air Flow Circuit Range/Performance) paso a paso.">
+    <meta property="og:url" content="https://herramientasautomotricespro.com/codigo-p0101.html">
+    <meta property="og:type" content="article">
+    <link rel="stylesheet" href="css/tailwind.min.css?v=3.0">
+    <link rel="stylesheet" href="css/styles.css?v=3.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-520054963"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-520054963');
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Diagnóstico y Solución del Código DTC OBD2 P0101",
+      "description": "Guía completa para diagnosticar el código P0101 (Mass Air Flow Sensor Circuit Range/Performance) con escáner OBD2 y pruebas de admisión.",
+      "author": {
+        "@type": "Organization",
+        "name": "Herramientas Automotrices Pro"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Herramientas Automotrices Pro",
+        "logo": "https://herramientasautomotricespro.com/assets/images/Hero.png"
+      },
+      "mainEntityOfPage": "https://herramientasautomotricespro.com/codigo-p0101.html"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué significa el código de falla P0101?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El código P0101 indica que la señal del sensor MAF no concuerda con los valores calculados por la computadora (ECU) en relación a la posición del acelerador (TPS), sensor MAP y RPM del motor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Una fuga de vacío puede generar el código P0101?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, una manguera de admisión rota o un cuerpo de aceleración sucio permiten la entrada de aire no medido por el sensor MAF, creando una discordancia que detona el P0101."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans pb-20 md:pb-10">
+    <header class="bg-slate-900 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-orange-500 flex items-center gap-2">
+                <i class="fas fa-wrench"></i> Herramientas Automotrices Pro
+            </a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-orange-400">Inicio</a>
+                <a href="scanners.html" class="hover:text-orange-400">Escáneres</a>
+                <a href="codigos-obd2.html" class="text-orange-400 font-bold">Códigos DTC</a>
+                <a href="multimetros-automotrices.html" class="hover:text-orange-400">Multímetros</a>
+                <a href="comparativas.html" class="hover:text-orange-400">Comparativas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-10">
+        <div class="mb-6 text-sm text-slate-500">
+            <a href="index.html" class="hover:underline">Inicio</a> &gt; 
+            <a href="codigos-obd2.html" class="hover:underline">Códigos OBD2</a> &gt; 
+            <span class="text-slate-800 font-semibold">Código P0101</span>
+        </div>
+
+        <article class="bg-white p-6 md:p-8 rounded-xl shadow-md border border-slate-200">
+            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Sensores de Admisión</span>
+            <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900 mt-3 mb-4">Código P0101: Circuito del Sensor de Flujo de Masa de Aire (MAF) - Rango / Rendimiento</h1>
+            
+            <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-8">
+                <h3 class="font-bold text-blue-900 flex items-center gap-2 mb-2 text-base">
+                    <i class="fas fa-stopwatch text-blue-600"></i> Resumen en 30 Segundos: Código P0101
+                </h3>
+                <p class="text-sm text-blue-950 leading-relaxed mb-3">
+                    El código <strong>P0101</strong> significa que el sensor MAF está enviando señales que no coinciden con la carga real del motor calculada por los sensores TPS y MAP. Ocurre frecuentemente por <strong>filtro de aire obstruido, filamento sucio o fugas en el fuelle de admisión</strong>.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs font-semibold text-blue-900">
+                    <div class="bg-white p-2 rounded border border-blue-200"><i class="fas fa-exclamation-triangle text-amber-500 mr-1"></i> Severidad: Media</div>
+                    <div class="bg-white p-2 rounded border border-blue-200"><i class="fas fa-tools text-blue-600 mr-1"></i> Dificultad: Fácil</div>
+                    <div class="bg-white p-2 rounded border border-blue-200"><i class="fas fa-coins text-green-600 mr-1"></i> Costo reparación: Bajo</div>
+                </div>
+            </div>
+
+            <!-- Síntomas -->
+            <h2 class="text-xl font-bold text-slate-900 mb-3 border-b pb-2 flex items-center gap-2">
+                <i class="fas fa-exclamation-circle text-orange-500"></i> Síntomas del Código P0101
+            </h2>
+            <ul class="list-disc pl-6 space-y-2 text-slate-700 mb-8 text-sm leading-relaxed">
+                <li>Luz <strong>Check Engine (MIL)</strong> encendida en el tablero.</li>
+                <li>Respuesta tardía al pisar el acelerador (vacilación / titubeo).</li>
+                <li>Consumo elevado de combustible.</li>
+                <li>Ralentí áspero o subidas y bajadas repentinas de revoluciones.</li>
+                <li>Transmisión automática que cambia de marcha de forma brusca.</li>
+            </ul>
+
+            <!-- Causas Principales -->
+            <h2 class="text-xl font-bold text-slate-900 mb-3 border-b pb-2 flex items-center gap-2">
+                <i class="fas fa-search text-blue-500"></i> Causas Comunes del Código P0101
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-spray-can text-orange-500 mr-1.5"></i> Filamento Contaminado</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">Una fina capa de suciedad retrasa la transferencia térmica del sensor, reportando un flujo de aire errático.</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-filter text-blue-500 mr-1.5"></i> Filtro de Aire Saturado</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">Un filtro de aire extremadamente sucio o mal colocado altera el patrón de flujo laminar de aire.</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-compress-arrows-alt text-green-500 mr-1.5"></i> Fuga de Aire en el Ducto</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">Fisuras en la manguera entre el sensor MAF y el cuerpo de mariposa.</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-smog text-purple-500 mr-1.5"></i> Válvula EGR Pegada Abierta</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">Gases de escape recirculando indebidamente reducen la masa de aire fresco medida por el MAF.</p>
+                </div>
+            </div>
+
+            <!-- Soluciones y Productos -->
+            <div class="my-10 bg-slate-900 text-white rounded-xl p-6 shadow-xl border border-slate-700 space-y-6">
+                <div class="text-center md:text-left">
+                    <span class="bg-orange-500 text-slate-900 text-xs font-black uppercase px-2.5 py-1 rounded">Kit de Reparación</span>
+                    <h3 class="text-xl font-extrabold mt-2 text-white">Herramientas Recomendadas para Solucionar el P0101</h3>
+                    <p class="text-slate-400 text-xs mt-1">Soluciones verificadas para taller y mecánicos aficionados:</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-slate-800 border border-slate-700 rounded-lg p-4 flex flex-col justify-between hover:border-orange-500 transition">
+                        <div>
+                            <span class="bg-green-500/20 text-green-400 text-[10px] font-bold px-2 py-0.5 rounded">Primer Paso Obligatorio</span>
+                            <h4 class="font-bold text-white text-sm mt-2 mb-1">Spray Limpiador de Sensor MAF Dieléctrico</h4>
+                            <p class="text-slate-400 text-xs mb-3">Limpia el filamento sin tocarlo. En el 70% de los casos soluciona el código P0101 al instante.</p>
+                        </div>
+                        <a href="https://www.amazon.es/s?k=limpiador+sensor+maf+spray&tag=herramien044f-21" target="_blank" rel="sponsored nofollow noopener" class="w-full text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-3 rounded text-xs transition">
+                            Comprar Spray MAF en Amazon <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-slate-800 border border-slate-700 rounded-lg p-4 flex flex-col justify-between hover:border-orange-500 transition">
+                        <div>
+                            <span class="bg-purple-500/20 text-purple-400 text-[10px] font-bold px-2 py-0.5 rounded">Diagnóstico en Tiempo Real</span>
+                            <h4 class="font-bold text-white text-sm mt-2 mb-1">Escáner OBD2 Autel MaxiScan MS309</h4>
+                            <p class="text-slate-400 text-xs mb-3">Lee los datos congelados del momento exacto del fallo y borra la luz de advertencia tras reparar.</p>
+                        </div>
+                        <a href="https://www.amazon.es/s?k=Autel+MaxiScan+MS309+OBD2&tag=herramien044f-21" target="_blank" rel="sponsored nofollow noopener" class="w-full text-center bg-slate-700 hover:bg-orange-500 text-white font-bold py-2 px-3 rounded text-xs transition">
+                            Ver Escáner en Amazon <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interlinking -->
+            <h2 class="text-xl font-bold text-slate-900 mb-3 border-b pb-2 flex items-center gap-2">
+                <i class="fas fa-sitemap text-blue-500"></i> Códigos Relacionados
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+                <a href="codigo-p0102.html" class="p-3 bg-slate-50 border border-slate-200 rounded-lg hover:border-orange-500 transition block">
+                    <span class="text-xs font-bold text-blue-600">Código P0102</span>
+                    <p class="text-[11px] text-slate-600 mt-1">Sensor MAF Entrada Baja (Low)</p>
+                </a>
+                <a href="codigo-p0103.html" class="p-3 bg-slate-50 border border-slate-200 rounded-lg hover:border-orange-500 transition block">
+                    <span class="text-xs font-bold text-blue-600">Código P0103</span>
+                    <p class="text-[11px] text-slate-600 mt-1">Sensor MAF Entrada Alta (High)</p>
+                </a>
+                <a href="codigo-p0171.html" class="p-3 bg-slate-50 border border-slate-200 rounded-lg hover:border-orange-500 transition block">
+                    <span class="text-xs font-bold text-amber-600">Código P0171</span>
+                    <p class="text-[11px] text-slate-600 mt-1">Mezcla Pobre Banco 1</p>
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-slate-900 border-t border-slate-700 p-3 flex items-center justify-between z-50 shadow-lg">
+        <div class="text-white text-xs">
+            <span class="font-bold text-orange-400 block">¿Código P0101 en tu auto?</span>
+            <span>Spray Limpiador MAF o Escáner</span>
+        </div>
+        <a href="https://www.amazon.es/s?k=limpiador+sensor+maf+spray&tag=herramien044f-21" target="_blank" rel="sponsored nofollow noopener" class="bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2 px-3 rounded shadow">
+            Ver en Amazon <i class="fas fa-arrow-right ml-1"></i>
+        </a>
+    </div>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm mt-12 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 space-y-3">
+            <p class="text-xs text-slate-500">
+                Aviso de afiliación: Como afiliado de Amazon, este sitio web genera ingresos por compras adscritas que cumplan los requisitos aplicables.
+            </p>
+            <p>© 2026 Herramientas Automotrices Pro • Guías de diagnóstico automotriz y comparativas técnicas.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía técnica del código OBD2 P0103 (Sensor MAF entrada alta). Síntomas, causas comunes de corto circuito en 5V/12V, pruebas con multímetro y cómo solucionarlo.">
+    <title>Código P0103: Sensor MAF Entrada Alta (Solución 2026)</title>
+    <link rel="canonical" href="https://herramientasautomotricespro.com/codigo-p0103.html">
+    <meta property="og:title" content="Código P0103: Sensor MAF Entrada Alta | Diagnóstico OBD2">
+    <meta property="og:description" content="Aprende a diagnosticar y solucionar el código P0103 (Mass Air Flow Circuit High Input) paso a paso con multímetro y escáner.">
+    <meta property="og:url" content="https://herramientasautomotricespro.com/codigo-p0103.html">
+    <meta property="og:type" content="article">
+    <link rel="stylesheet" href="css/tailwind.min.css?v=3.0">
+    <link rel="stylesheet" href="css/styles.css?v=3.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-520054963"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-520054963');
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Diagnóstico y Reparación del Código DTC OBD2 P0103",
+      "description": "Guía paso a paso para diagnosticar el código P0103 (Mass Air Flow High Input) por cortocircuito de voltaje con multímetro o escáner.",
+      "author": {
+        "@type": "Organization",
+        "name": "Herramientas Automotrices Pro"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Herramientas Automotrices Pro",
+        "logo": "https://herramientasautomotricespro.com/assets/images/Hero.png"
+      },
+      "mainEntityOfPage": "https://herramientasautomotricespro.com/codigo-p0103.html"
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans pb-20 md:pb-10">
+    <header class="bg-slate-900 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-orange-500 flex items-center gap-2">
+                <i class="fas fa-wrench"></i> Herramientas Automotrices Pro
+            </a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-orange-400">Inicio</a>
+                <a href="scanners.html" class="hover:text-orange-400">Escáneres</a>
+                <a href="codigos-obd2.html" class="text-orange-400 font-bold">Códigos DTC</a>
+                <a href="multimetros-automotrices.html" class="hover:text-orange-400">Multímetros</a>
+                <a href="comparativas.html" class="hover:text-orange-400">Comparativas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-10">
+        <div class="mb-6 text-sm text-slate-500">
+            <a href="index.html" class="hover:underline">Inicio</a> &gt; 
+            <a href="codigos-obd2.html" class="hover:underline">Códigos OBD2</a> &gt; 
+            <span class="text-slate-800 font-semibold">Código P0103</span>
+        </div>
+
+        <article class="bg-white p-6 md:p-8 rounded-xl shadow-md border border-slate-200">
+            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Sensores de Admisión</span>
+            <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900 mt-3 mb-4">Código P0103: Sensor de Flujo de Masa de Aire (MAF) - Entrada Alta del Circuito</h1>
+            
+            <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-8">
+                <h3 class="font-bold text-blue-900 flex items-center gap-2 mb-2 text-base">
+                    <i class="fas fa-stopwatch text-blue-600"></i> Resumen en 30 Segundos: Código P0103
+                </h3>
+                <p class="text-sm text-blue-950 leading-relaxed mb-3">
+                    El código <strong>P0103</strong> indica que el voltaje del sensor MAF supera los <strong>4.9V a 5.0V</strong> (o su frecuencia en Hz excede el límite máximo). La computadora interpreta un flujo de aire gigantesco e inyecta exceso de combustible, generando humo negro y ahogo severo.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs font-semibold text-blue-900">
+                    <div class="bg-white p-2 rounded border border-blue-200"><i class="fas fa-exclamation-triangle text-red-500 mr-1"></i> Severidad: Alta</div>
+                    <div class="bg-white p-2 rounded border border-blue-200"><i class="fas fa-tools text-blue-600 mr-1"></i> Dificultad: Media</div>
+                    <div class="bg-white p-2 rounded border border-blue-200"><i class="fas fa-coins text-amber-600 mr-1"></i> Costo reparación: Medio</div>
+                </div>
+            </div>
+
+            <!-- Síntomas -->
+            <h2 class="text-xl font-bold text-slate-900 mb-3 border-b pb-2 flex items-center gap-2">
+                <i class="fas fa-exclamation-circle text-orange-500"></i> Síntomas del Código P0103
+            </h2>
+            <ul class="list-disc pl-6 space-y-2 text-slate-700 mb-8 text-sm leading-relaxed">
+                <li>Luz <strong>Check Engine</strong> parpadeando o fija.</li>
+                <li><strong>Humo negro denso</strong> saliendo del tubo de escape por mezcla ultra rica.</li>
+                <li>Fuerte olor a gasolina cruda en el compartimento del motor y escape.</li>
+                <li>Bujías carbonizadas por exceso de combustible.</li>
+                <li>El motor se apaga en ralentí o ratea fuertemente.</li>
+            </ul>
+
+            <!-- Causas Principales -->
+            <h2 class="text-xl font-bold text-slate-900 mb-3 border-b pb-2 flex items-center gap-2">
+                <i class="fas fa-search text-blue-500"></i> Causas Comunes del Código P0103
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-bolt text-red-500 mr-1.5"></i> Cortocircuito a Positivo (+12V o +5V)</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">El cable de señal del MAF está en contacto con el cable de alimentación de 12V o 5V por aislamiento derretido.</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-unlink text-amber-500 mr-1.5"></i> Pérdida de Masa / Tierra del Sensor</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">Si la línea de tierra del sensor se corta, el voltaje de señal flota hasta el voltaje de referencia máximo (5V).</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-microchip text-purple-500 mr-1.5"></i> Falla Interna del Sensor MAF</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">El puente de Wheatstone interno o el módulo de amplificación electrónica del sensor se ha quemado.</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-car-crash text-blue-500 mr-1.5"></i> Daño en la Computadora ECU</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">Raro, pero posible daño en el conversor analógico-digital de la centralita.</p>
+                </div>
+            </div>
+
+            <!-- Cómo Probar con Multímetro -->
+            <h2 class="text-xl font-bold text-slate-900 mb-3 border-b pb-2 flex items-center gap-2">
+                <i class="fas fa-wave-square text-orange-500"></i> Prueba Rápida con Multímetro Automotriz
+            </h2>
+            <ol class="list-decimal pl-6 space-y-3 text-slate-700 mb-8 text-sm leading-relaxed">
+                <li>Desconecta el arnés del sensor MAF.</li>
+                <li>Con el contacto en ON, mide voltaje en el pin de señal del arnés hacia masa. Debe registrar ~5V de referencia con sensor desconectado.</li>
+                <li>Comprueba que la línea de masa del arnés tenga 0 Ohmios contra el borne negativo de batería. Si marca circuito abierto (O.L.), repara el cable de masa.</li>
+                <li>Si el cableado está intacto y con el sensor conectado marca 5V continuos aún con motor apagado, el <strong>sensor MAF está defectuoso y debe ser sustituido</strong>.</li>
+            </ol>
+
+            <!-- Herramientas Recomendadas -->
+            <div class="my-10 bg-slate-900 text-white rounded-xl p-6 shadow-xl border border-slate-700 space-y-6">
+                <div class="text-center md:text-left">
+                    <span class="bg-orange-500 text-slate-900 text-xs font-black uppercase px-2.5 py-1 rounded">Diagnóstico Profesional</span>
+                    <h3 class="text-xl font-extrabold mt-2 text-white">Equipamiento para Reparar el Código P0103</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-slate-800 border border-slate-700 rounded-lg p-4 flex flex-col justify-between hover:border-orange-500 transition">
+                        <div>
+                            <span class="bg-blue-500/20 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded">Medición de Continuidad</span>
+                            <h4 class="font-bold text-white text-sm mt-2 mb-1">Multímetro Digital Automotriz True-RMS</h4>
+                            <p class="text-slate-400 text-xs mb-3">Imprescindible para detectar si la línea de tierra está abierta o si existe corto a 12V.</p>
+                        </div>
+                        <a href="https://www.amazon.es/s?k=multimetro+digital+automotriz+auto-rango&tag=herramien044f-21" target="_blank" rel="sponsored nofollow noopener" class="w-full text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-3 rounded text-xs transition">
+                            Ver Multímetros en Amazon <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-slate-800 border border-slate-700 rounded-lg p-4 flex flex-col justify-between hover:border-orange-500 transition">
+                        <div>
+                            <span class="bg-purple-500/20 text-purple-400 text-[10px] font-bold px-2 py-0.5 rounded">Monitoreo de Sensores</span>
+                            <h4 class="font-bold text-white text-sm mt-2 mb-1">Escáner Automotriz Launch CRP123X</h4>
+                            <p class="text-slate-400 text-xs mb-3">Permite visualizar el voltaje exacto en voltios que recibe la ECU en tiempo real.</p>
+                        </div>
+                        <a href="https://www.amazon.es/s?k=Launch+CRP123X+Pro+escaner+automotriz&tag=herramien044f-21" target="_blank" rel="sponsored nofollow noopener" class="w-full text-center bg-slate-700 hover:bg-orange-500 text-white font-bold py-2 px-3 rounded text-xs transition">
+                            Ver Escáner en Amazon <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interlinking -->
+            <h2 class="text-xl font-bold text-slate-900 mb-3 border-b pb-2 flex items-center gap-2">
+                <i class="fas fa-sitemap text-blue-500"></i> Códigos Relacionados
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+                <a href="codigo-p0101.html" class="p-3 bg-slate-50 border border-slate-200 rounded-lg hover:border-orange-500 transition block">
+                    <span class="text-xs font-bold text-blue-600">Código P0101</span>
+                    <p class="text-[11px] text-slate-600 mt-1">Sensor MAF Rango / Rendimiento</p>
+                </a>
+                <a href="codigo-p0102.html" class="p-3 bg-slate-50 border border-slate-200 rounded-lg hover:border-orange-500 transition block">
+                    <span class="text-xs font-bold text-blue-600">Código P0102</span>
+                    <p class="text-[11px] text-slate-600 mt-1">Sensor MAF Entrada Baja (Low)</p>
+                </a>
+                <a href="codigo-p0171.html" class="p-3 bg-slate-50 border border-slate-200 rounded-lg hover:border-orange-500 transition block">
+                    <span class="text-xs font-bold text-amber-600">Código P0171</span>
+                    <p class="text-[11px] text-slate-600 mt-1">Mezcla Pobre Banco 1</p>
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-slate-900 border-t border-slate-700 p-3 flex items-center justify-between z-50 shadow-lg">
+        <div class="text-white text-xs">
+            <span class="font-bold text-orange-400 block">¿Diagnóstico P0103?</span>
+            <span>Multímetro o Escáner OBD2</span>
+        </div>
+        <a href="multimetros-automotrices.html" class="bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2 px-3 rounded shadow">
+            Ver Herramientas <i class="fas fa-arrow-right ml-1"></i>
+        </a>
+    </div>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm mt-12 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 space-y-3">
+            <p class="text-xs text-slate-500">
+                Aviso de afiliación: Como afiliado de Amazon, este sitio web genera ingresos por compras adscritas que cumplan los requisitos aplicables.
+            </p>
+            <p>© 2026 Herramientas Automotrices Pro • Guías de diagnóstico automotriz y comparativas técnicas.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Guía: Elegir compresor de aire para taller. Análisis de capacidad, caudal CFM, ruido y mantenimiento.">
-    <title>Guía: Compresor de Aire | Herramientas Automotrices Pro</title>
+    <meta name="description" content="Guía técnica 2026: Cómo elegir el mejor compresor de aire para taller automotriz. Cálculo de CFM reales, PSI, capacidad de tanque y mantenimiento.">
+    <title>Guía de Compresores de Aire para Taller 2026 | Herramientas Automotrices Pro</title>
     <link rel="canonical" href="https://herramientasautomotricespro.com/compresor-aire.html">
 
     <!-- Google Analytics 4 -->
@@ -17,174 +17,261 @@
     </script>
     <!-- End Google Analytics 4 -->
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/tailwind.min.css?v=3.0">
+    <link rel="stylesheet" href="css/styles.css?v=3.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Guía de Compresores de Aire para Taller Mecánico 2026",
+      "description": "Cálculo de caudal CFM necesario para herramientas neumáticas, capacidad de tanque en galones/litros y presión PSI de trabajo.",
+      "author": {
+        "@type": "Organization",
+        "name": "Herramientas Automotrices Pro"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Herramientas Automotrices Pro",
+        "logo": "https://herramientasautomotricespro.com/assets/images/Hero.png"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuántos CFM se necesitan para una pistola de impacto de 1/2 pulgada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Una pistola de impacto neumática típica de 1/2\" requiere entre 4.0 y 5.5 CFM a 90 PSI de uso continuo. Para evitar caídas de torque en pernos apretados de suspensión o ruedas, se recomienda un compresor que entregue al menos 6.0 a 8.0 CFM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué es obligatorio purgar el agua del tanque del compresor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Al comprimir aire, la humedad atmosférica se condensa dentro del tanque de acero. Si no se drena semanalmente mediante la válvula inferior, el agua oxida el tanque por dentro (riesgo de explosión por fatiga de material) y viaja por la manguera arruinando las herramientas neumáticas y acabados de pintura."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué es mejor: compresor lubricado por aceite o libre de aceite (oil-free)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para uso intensivo en taller mecánico profesional, los compresores lubricados por aceite de hierro fundido tienen una vida útil 3 a 5 veces más larga y operan a menor temperatura. Los libres de aceite son más portátiles y no requieren mantenimiento, pero son más ruidosos y de menor ciclo de trabajo."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
-<body class="bg-gray-100 font-sans">
-    <header class="page-hero">
-        <div class="container">
-            <div class="page-hero-content">
-                <a class="back-link" href="index.html">&larr; Volver al inicio</a>
-                <div class="hero-kicker">Guía 2026 • Compresores</div>
-                <h1>Guía Completa: Elegir Compresor de Aire para Taller</h1>
-                <p>Análisis de capacidades, caudal CFM, ruido, marcas confiables y mantenimiento básico. Recomendaciones por tamaño de taller.</p>
-                <div class="hero-meta">
-                    <span><i class="fa-solid fa-wind"></i> Caudal CFM</span>
-                    <span><i class="fa-solid fa-volume-mute"></i> Control de ruido</span>
-                    <span><i class="fa-solid fa-wrench"></i> Mantenimiento</span>
-                </div>
-                <p class="header-disclosure">
-                    Como afiliado de Amazon, este sitio puede generar comisiones por compras que califican.
-                </p>
-            </div>
+<body class="bg-slate-50 text-slate-800 font-sans pb-20 md:pb-10">
+    <header class="bg-slate-900 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-orange-500 flex items-center gap-2">
+                <i class="fas fa-wrench"></i> Herramientas Pro
+            </a>
+            <nav class="hidden md:flex gap-6 text-sm font-semibold">
+                <a href="index.html" class="hover:text-orange-400">Inicio</a>
+                <a href="scanners.html" class="hover:text-orange-400">Scanners OBD2</a>
+                <a href="multimetros-automotrices.html" class="hover:text-orange-400">Multímetros</a>
+                <a href="arrancadores-bateria.html" class="hover:text-orange-400">Arrancadores</a>
+                <a href="compresor-aire.html" class="text-orange-400 font-bold">Compresores</a>
+                <a href="comparativas.html" class="hover:text-orange-400">Comparativas</a>
+            </nav>
         </div>
     </header>
 
-    <section class="article-detail-section">
-        <div class="container">
-            <div class="article-detail-grid">
-                <main class="article-main">
-                    <div class="article-meta-detail">
-                        <span><i class="fa-solid fa-calendar"></i> Feb 10, 2026</span>
-                        <span><i class="fa-solid fa-clock"></i> 10 min lectura</span>
-                        <span><i class="fa-solid fa-user"></i> Herramientas Pro</span>
-                    </div>
+    <main class="max-w-5xl mx-auto px-4 py-8">
+        <div class="mb-6 flex items-center gap-2 text-sm text-slate-500">
+            <a href="index.html" class="hover:text-orange-600">Inicio</a>
+            <span>/</span>
+            <a href="index.html#herramientas" class="hover:text-orange-600">Herramientas</a>
+            <span>/</span>
+            <span class="text-slate-700 font-semibold">Compresores de Aire</span>
+        </div>
 
-                    <h2>¿Por qué un buen compresor es crítico para cualquier taller?</h2>
-                    <p>
-                        El compresor es el corazón de una taller profesional. Alimenta herramientas neumáticas, sistemas de limpieza y taladros.
-                        Un compresor inadecuado causa bajo rendimiento, tiempo de inactividad y frustración. Elegir el correcto te ahorra dinero a largo plazo.
-                    </p>
-
-                    <h3>Especificaciones clave explicadas</h3>
-                    <div class="specs-table">
-                        <div class="spec-row">
-                            <span class="spec-label">CFM (Cubic Feet per Minute)</span>
-                            <span>Caudal de aire. Mayor CFM = más herramientas simultáneamente.</span>
-                        </div>
-                        <div class="spec-row">
-                            <span class="spec-label">Litros de tanque</span>
-                            <span>Capacidad de almacenamiento. 30-100L para taller. Mayor = menos ciclos de compresor.</span>
-                        </div>
-                        <div class="spec-row">
-                            <span class="spec-label">PSI (Libras por pulgada²)</span>
-                            <span>Presión. Típicamente 90-120 PSI. Mayor es mejor para herramientas exigentes.</span>
-                        </div>
-                        <div class="spec-row">
-                            <span class="spec-label">HP (Caballos de fuerza)</span>
-                            <span>Potencia del motor. 2-5 HP común. Mayor = compresor más rápido y potente.</span>
-                        </div>
-                        <div class="spec-row">
-                            <span class="spec-label">Decibeles (dB)</span>
-                            <span>Ruido. 80 dB es normal. Menos es mejor para ambiente de trabajo.</span>
-                        </div>
-                    </div>
-
-                    <h3>¿Qué necesita tu taller?</h3>
-                    <div class="comparison-box">
-                        <div>
-                            <h4>🏠 Taller pequeño (1-2 personas)</h4>
-                            <ul>
-                                <li><strong>CFM recomendado:</strong> 3-6 CFM</li>
-                                <li><strong>Tanque:</strong> 20-30 litros</li>
-                                <li><strong>Motor:</strong> 1.5-2 HP</li>
-                                <li><strong>Ejemplo:</strong> Schulz MSV 6/50</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4>🏭 Taller mediano (3-5 personas)</h4>
-                            <ul>
-                                <li><strong>CFM recomendado:</strong> 7-10 CFM</li>
-                                <li><strong>Tanque:</strong> 50-100 litros</li>
-                                <li><strong>Motor:</strong> 3-5 HP</li>
-                                <li><strong>Ejemplo:</strong> FIAC ABK30 o similar</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <h3>Marcas confiables en 2026</h3>
-                    <div class="brands-grid">
-                        <div class="brand-card">
-                            <h4>Schulz (Brasil)</h4>
-                            <p><strong>Rango:</strong> 4-10 CFM</p>
-                            <p><strong>Ventaja:</strong> Excelente relación precio, bajo ruido, confiable.</p>
-                        </div>
-                        <div class="brand-card">
-                            <h4>FIAC (Argentina)</h4>
-                            <p><strong>Rango:</strong> 5-15 CFM</p>
-                            <p><strong>Ventaja:</strong> Potencia industrial, tanques grandes, durable.</p>
-                        </div>
-                        <div class="brand-card">
-                            <h4>Atlas Copco (Premium)</h4>
-                            <p><strong>Rango:</strong> Todos</p>
-                            <p><strong>Ventaja:</strong> Máxima durabilidad, garantía, eficiencia energética.</p>
-                        </div>
-                    </div>
-
-                    <h3>Mantenimiento básico</h3>
-                    <p><strong>Semanal:</strong></p>
-                    <ul>
-                        <li>Drena agua del tanque (abre válvula inferior por 30 segundos)</li>
-                        <li>Revisa nivel de aceite en motor</li>
-                    </ul>
-
-                    <p style="margin-top: 1rem;"><strong>Mensual:</strong></p>
-                    <ul>
-                        <li>Reemplaza o limpia filtro de aire</li>
-                        <li>Verifica presión de operación</li>
-                    </ul>
-
-                    <p style="margin-top: 1rem;"><strong>Anual:</strong></p>
-                    <ul>
-                        <li>Cambio de aceite (si es lubricado)</li>
-                        <li>Inspección general de válvulas</li>
-                    </ul>
-
-                    <h3>Recomendación final por tamaño de taller</h3>
-                    <p>
-                        <strong>Taller en casa:</strong> Schulz 4-6 CFM. Silencioso, económico, suficiente para 1-2 herramientas.
-                    </p>
-                    <p>
-                        <strong>Taller pequeño profesional:</strong> Schulz o FIAC 8-10 CFM. Balance perfecto de costo y potencia.
-                    </p>
-                    <p>
-                        <strong>Taller alto volumen:</strong> FIAC 12+ CFM o Atlas Copco. No escatimes aquí; es tu motor de producción.
-                    </p>
-
-                    <div class="article-cta">
-                        <a href="index.html#herramientas/compresor" class="cta-button">Ver Compresores disponibles</a>
-                    </div>
-                </main>
-
-                <aside class="article-sidebar">
-                    <div class="sidebar-card">
-                        <h3>En esta guía</h3>
-                        <ul>
-                            <li><a href="#especificaciones">Especificaciones</a></li>
-                            <li><a href="#necesidades">Necesidades por taller</a></li>
-                            <li><a href="#mantenimiento">Mantenimiento</a></li>
-                        </ul>
-                    </div>
-                    <div class="sidebar-card">
-                        <h3>Relacionado</h3>
-                        <ul>
-                            <li><a href="index.html#herramientas">Todas las herramientas</a></li>
-                            <li><a href="index.html#guias">Guías de compra</a></li>
-                            <li><a href="seguridad-herramientas.html">Seguridad en taller</a></li>
-                        </ul>
-                    </div>
-                </aside>
+        <article class="bg-white p-6 md:p-8 rounded-xl shadow-md border border-slate-200">
+            <span class="bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Equipamiento de Taller 2026</span>
+            <h1 class="text-3xl font-extrabold text-slate-900 mt-3 mb-4">Guía Completa: Elegir Compresor de Aire para Taller Mecánico</h1>
+            
+            <div class="bg-sky-50 border border-sky-200 rounded-xl p-5 mb-8">
+                <h3 class="font-bold text-sky-900 flex items-center gap-2 mb-2 text-base">
+                    <i class="fas fa-wind text-sky-600"></i> Regla de Oro del CFM en Taller
+                </h3>
+                <p class="text-sm text-sky-950 leading-relaxed">
+                    Nunca compres un compresor basándote únicamente en el tamaño del tanque (galones/litros) o en los caballos de fuerza (HP) pico. El valor crítico es el <strong>Caudal a 90 PSI (CFM @ 90 PSI)</strong>. Multiplica el consumo de tu herramienta neumática más exigente por <strong>1.5</strong> para asegurar que el motor descanse y no trabaje al 100% de su ciclo.
+                </p>
             </div>
-        </div>
-    </section>
 
-    <footer class="site-footer">
-        <div class="container">
-            <p>© 2026 Herramientas Automotrices • Contenido informativo y enlaces de afiliado.</p>
+            <!-- TABLA CONSUMO CFM POR HERRAMIENTA -->
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 border-b pb-2 flex items-center gap-2">
+                <i class="fas fa-tools text-orange-500"></i> Consumo de Aire por Tipo de Herramienta Neumática
+            </h2>
+            <div class="overflow-x-auto mb-10">
+                <table class="w-full text-left text-sm border-collapse border border-slate-200 rounded-lg">
+                    <thead>
+                        <tr class="bg-slate-900 text-white text-xs uppercase tracking-wider">
+                            <th class="p-3 border border-slate-700">Herramienta Neumática</th>
+                            <th class="p-3 border border-slate-700">Consumo Promedio (CFM @ 90 PSI)</th>
+                            <th class="p-3 border border-slate-700">Uso (Intermitente vs Continuo)</th>
+                            <th class="p-3 border border-slate-700">Compresor Mínimo Sugerido</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 bg-white">
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-3 font-bold text-slate-900">Pistola de Impacto 1/2"</td>
+                            <td class="p-3 font-semibold text-orange-600">4.0 - 5.5 CFM</td>
+                            <td class="p-3">Intermitente (15s ráfagas)</td>
+                            <td class="p-3">Tanque 30L / 5.0 CFM</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-3 font-bold text-slate-900">Matraca Neumática 3/8"</td>
+                            <td class="p-3">3.0 - 4.5 CFM</td>
+                            <td class="p-3">Intermitente</td>
+                            <td class="p-3">Tanque 24L - 50L</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-3 font-bold text-slate-900">Pistola de Pintura HVLP</td>
+                            <td class="p-3 font-bold text-red-600">8.0 - 14.0 CFM</td>
+                            <td class="p-3 font-semibold text-red-700">Continuo (Muy exigente)</td>
+                            <td class="p-3 font-semibold text-slate-900">Tanque 100L+ / 2 Etapas</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-3 font-bold text-slate-900">Lijadora / Esmeril Angular</td>
+                            <td class="p-3 font-bold text-red-600">6.0 - 10.0 CFM</td>
+                            <td class="p-3 font-semibold text-red-700">Continuo</td>
+                            <td class="p-3 font-semibold text-slate-900">Tanque 60L - 100L / 8+ CFM</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-3 font-bold text-slate-900">Inflador y Soplador de Aire</td>
+                            <td class="p-3 text-green-700">1.0 - 2.5 CFM</td>
+                            <td class="p-3">Intermitente</td>
+                            <td class="p-3 text-slate-600">Cualquier compresor portátil</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- COMPARACIÓN POR TAMAÑO DE TALLER -->
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 border-b pb-2 flex items-center gap-2">
+                <i class="fas fa-warehouse text-blue-500"></i> ¿Qué Compresor Necesitas Según tu Taller?
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                <div class="border border-slate-200 rounded-xl p-5 bg-white shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-bold px-2 py-0.5 rounded uppercase">Garaje / DIY</span>
+                        <h3 class="font-bold text-slate-900 text-lg mt-2 mb-2">Taller en Casa (1 Persona)</h3>
+                        <ul class="text-xs text-slate-600 space-y-2 mb-4">
+                            <li><strong>CFM Requerido:</strong> 3.5 a 5.0 CFM</li>
+                            <li><strong>Tanque:</strong> 20 a 30 Litros (Portátil)</li>
+                            <li><strong>Motor:</strong> 1.5 a 2.0 HP (110V)</li>
+                            <li><strong>Ideal para:</strong> Ruedas, inflado, sopleteado y frenos ocasionales.</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=compresor+de+aire+portatil&tag=herramien044f-21" target="_blank" rel="sponsored nofollow noopener" class="w-full text-center bg-slate-900 hover:bg-orange-500 text-white font-bold py-2 px-3 rounded text-xs transition">
+                        Ver Modelos Portátiles en Amazon
+                    </a>
+                </div>
+
+                <div class="border-2 border-orange-400 rounded-xl p-5 bg-orange-50/40 shadow-sm hover:shadow-md flex flex-col justify-between transition">
+                    <div>
+                        <div class="mb-3">
+                            <span class="inline-flex items-center gap-1 bg-orange-500 text-white text-[11px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wide whitespace-nowrap">
+                                <i class="fas fa-star"></i> Recomendado Taller
+                            </span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">Taller Mecánico Mediano</h3>
+                        <ul class="text-xs text-slate-600 space-y-2 mb-6">
+                            <li><strong>CFM Requerido:</strong> 7.0 a 10.0 CFM</li>
+                            <li><strong>Tanque:</strong> 50 a 100 Litros</li>
+                            <li><strong>Motor:</strong> 3.0 a 4.0 HP (Banda y Aceite)</li>
+                            <li><strong>Ideal para:</strong> Pistolas de impacto continuas, desmontaje y purga de frenos.</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=compresor+de+aire+50L&tag=herramien044f-21" target="_blank" rel="sponsored nofollow noopener" class="w-full text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-3 rounded-lg text-xs transition">
+                        Ver Compresores de Taller en Amazon
+                    </a>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-5 bg-white shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-bold px-2 py-0.5 rounded uppercase">Alto Rendimiento</span>
+                        <h3 class="font-bold text-slate-900 text-lg mt-2 mb-2">Pintura y Latonería</h3>
+                        <ul class="text-xs text-slate-600 space-y-2 mb-4">
+                            <li><strong>CFM Requerido:</strong> 12.0 a 20.0+ CFM</li>
+                            <li><strong>Tanque:</strong> 150 a 300 Litros (2 Etapas)</li>
+                            <li><strong>Motor:</strong> 5.0 a 7.5 HP (220V Trifásico/Bifásico)</li>
+                            <li><strong>Ideal para:</strong> Cabinas de pintura continuas, lijado neumático y arenado.</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=compresor+de+aire+100L&tag=herramien044f-21" target="_blank" rel="sponsored nofollow noopener" class="w-full text-center bg-slate-900 hover:bg-orange-500 text-white font-bold py-2 px-3 rounded text-xs transition">
+                        Ver Equipos Industriales en Amazon
+                    </a>
+                </div>
+            </div>
+
+            <!-- MANTENIMIENTO PREVENTIVO -->
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 border-b pb-2 flex items-center gap-2">
+                <i class="fas fa-oil-can text-amber-500"></i> Mantenimiento Clave para Duplicar la Vida Útil
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-tint text-blue-500 mr-1"></i> Drenado Semanal</h4>
+                    <p class="text-xs text-slate-600">Abre la válvula de purga en la base del tanque tras terminar la jornada para expulsar el agua condensada acumulada.</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-filter text-amber-500 mr-1"></i> Filtro de Aire</h4>
+                    <p class="text-xs text-slate-600">Sopla el filtro de admisión cada 15 días y cámbialo cada 6 meses. El polvo del taller desgasta los anillos del pistón.</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-slate-900 text-sm mb-1"><i class="fas fa-tachometer-alt text-green-500 mr-1"></i> Nivel de Aceite ISO 100</h4>
+                    <p class="text-xs text-slate-600">Revisa la mirilla semanalmente. Usa aceite no detergente específico para compresores de aire reciprocantes.</p>
+                </div>
+            </div>
+
+            <!-- PREGUNTAS FRECUENTES FAQ -->
+            <h2 class="text-xl font-bold text-slate-900 mb-4 border-b pb-2">Preguntas Frecuentes (FAQ)</h2>
+            <div class="space-y-4 mb-8">
+                <div class="border border-slate-200 rounded-lg p-4 bg-slate-50">
+                    <h3 class="font-bold text-slate-800 mb-1">¿Cuántos CFM se necesitan para una pistola de impacto de 1/2 pulgada?</h3>
+                    <p class="text-sm text-slate-600">Una pistola de impacto neumática típica de 1/2" requiere entre 4.0 y 5.5 CFM a 90 PSI de uso continuo. Para evitar caídas de torque en pernos apretados de suspensión o ruedas, se recomienda un compresor que entregue al menos 6.0 a 8.0 CFM.</p>
+                </div>
+                <div class="border border-slate-200 rounded-lg p-4 bg-slate-50">
+                    <h3 class="font-bold text-slate-800 mb-1">¿Por qué es obligatorio purgar el agua del tanque del compresor?</h3>
+                    <p class="text-sm text-slate-600">Al comprimir aire, la humedad atmosférica se condensa dentro del tanque de acero. Si no se drena semanalmente mediante la válvula inferior, el agua oxida el tanque por dentro (riesgo de explosión por fatiga de material) y viaja por la manguera arruinando las herramientas neumáticas y acabados de pintura.</p>
+                </div>
+                <div class="border border-slate-200 rounded-lg p-4 bg-slate-50">
+                    <h3 class="font-bold text-slate-800 mb-1">¿Qué es mejor: compresor lubricado por aceite o libre de aceite (oil-free)?</h3>
+                    <p class="text-sm text-slate-600">Para uso intensivo en taller mecánico profesional, los compresores lubricados por aceite de hierro fundido tienen una vida útil 3 a 5 veces más larga y operan a menor temperatura. Los libres de aceite son más portátiles y no requieren mantenimiento, pero son más ruidosos y de menor ciclo de trabajo.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-slate-900 border-t border-slate-700 p-3 flex items-center justify-between z-50 shadow-lg">
+        <div class="text-white text-xs">
+            <span class="font-bold text-orange-400 block">Compresores para Taller</span>
+            <span>Ofertas Verificadas en Amazon</span>
         </div>
+        <a href="https://www.amazon.es/s?k=compresor+de+aire+50L&tag=herramien044f-21" target="_blank" rel="sponsored nofollow noopener" class="bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2 px-3 rounded shadow">
+            Ver en Amazon <i class="fas fa-arrow-right ml-1"></i>
+        </a>
+    </div>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm mt-12 border-t border-slate-800">
+        <p>© 2026 Herramientas Automotrices Pro • Guías técnicas de equipamiento neumático de taller</p>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=3.0"></script>
 </body>
 </html>

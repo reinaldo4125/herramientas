@@ -1,0 +1,8 @@
+{
+  "name": "Herramientas Automotrices Pro",
+  "description": "Comparativas reales de herramientas automotrices, guías de compra y recomendaciones para talleres y mecánicos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

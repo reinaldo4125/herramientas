@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buscador de códigos de falla OBD2 (P0300, P0420, P0171, P0301, P0442). Diagnóstico rápido, causas comunes y escáner recomendado para borrar la luz Check Engine.">
+    <title>Buscador de Códigos de Falla OBD2 | Diagnóstico y Solución 2026</title>
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-520054963"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-520054963');
+    </script>
+    
+    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="css/tailwind.min.css?v=3.0">
+    <link rel="stylesheet" href="css/styles.css?v=3.0">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/styles.css?v=3.0">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Buscador de Códigos de Falla OBD2 y Diagnóstico DTC 2026",
+      "description": "Base de datos y buscador interactivo de códigos de error OBD2 para apagar la luz de Check Engine con escáneres automotrices.",
+      "author": {
+        "@type": "Organization",
+        "name": "Herramientas Automotrices Pro"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Herramientas Automotrices Pro",
+        "logo": "https://herramientasautomotricespro.com/assets/images/Hero.png"
+      }
+    }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800 pb-20 md:pb-10">
+
+    <!-- HEADER / HERO -->
+    <header class="bg-header text-white">
+        <div class="container">
+            <div class="left-column">
+                <div class="header-content">
+                    <div class="header-logo">
+                        <a href="index.html" class="flex items-center gap-3">
+                            <div class="logo-icon">
+                                <i class="fas fa-barcode"></i>
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header-text">
+                        <h1>Buscador de Códigos de Falla OBD2</h1>
+                        <p>Descubre el significado de la luz Check Engine y cómo diagnosticar el código paso a paso.</p>
+                        <a href="#buscador-obd2" class="header-cta">
+                            INGRESAR CÓDIGO DTC
+                        </a>
+                        <p class="header-footer">Base de Datos 2026 • Soluciones Verificadas</p>
+                        <p class="header-disclosure">
+                            Como afiliado de Amazon, este sitio genera comisiones por compras cualificadas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-image">
+                <img src="assets/images/Hero.png" alt="Diagnóstico OBD2">
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVEGACIÓN SECUNDARIA -->
+    <nav class="bg-slate-900 text-white py-3 border-b border-slate-700 sticky top-0 z-40">
+        <div class="container flex flex-nowrap md:flex-wrap items-center justify-between gap-4 overflow-x-auto no-scrollbar">
+            <a href="index.html" class="font-bold text-orange-500 flex items-center gap-2 shrink-0">
+                <i class="fas fa-arrow-left"></i> Volver a Inicio
+            </a>
+            <div class="flex flex-nowrap md:flex-wrap gap-4 text-sm font-semibold shrink-0">
+                <a href="scanners.html" class="hover:text-orange-400 shrink-0"><i class="fas fa-barcode"></i> Scanners OBD2</a>
+                <a href="multimetros-automotrices.html" class="hover:text-orange-400 shrink-0"><i class="fas fa-wave-square"></i> Multímetros</a>
+                <a href="arrancadores-bateria.html" class="hover:text-orange-400 shrink-0"><i class="fas fa-car-battery"></i> Arrancadores</a>
+                <a href="codigos-obd2.html" class="text-orange-400 underline shrink-0"><i class="fas fa-search"></i> Buscador OBD2</a>
+                <a href="comparativas.html" class="hover:text-orange-400 shrink-0"><i class="fas fa-chart-bar"></i> Comparativas</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="container py-10 space-y-12">
+
+        <!-- INTERACTIVE DTC SEARCH WIDGET -->
+        <section id="buscador-obd2" class="bg-white p-6 md:p-8 rounded-xl shadow-lg border-2 border-orange-500">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <span class="bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full uppercase">Herramienta Diagnóstica Gratuita</span>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">¿Qué código te muestra tu escáner?</h2>
+                <p class="text-gray-600 text-sm">Selecciona o escribe tu código de error (ej: P0300, P0420, P0171) para ver la falla exacta, severidad y la herramienta recomendada para solucionarlo.</p>
+            </div>
+
+            <!-- SEARCH BAR -->
+            <div class="mt-6 max-w-xl mx-auto flex gap-2">
+                <div class="relative flex-grow">
+                    <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" id="dtc-search-input" placeholder="Escribe tu código ej: P0300, P0420..." class="w-full pl-10 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:border-orange-500 focus:outline-none font-mono font-bold text-lg text-slate-800 uppercase">
+                </div>
+            </div>
+
+            <!-- DTC CHIPS -->
+            <div class="mt-4 flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
+                <span class="text-xs text-gray-500 self-center font-bold mr-1">Frecuentes:</span>
+                <button class="dtc-chip bg-slate-100 hover:bg-orange-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full transition" data-code="P0102">P0102</button>
+                <button class="dtc-chip bg-slate-100 hover:bg-orange-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full transition" data-code="P0101">P0101</button>
+                <button class="dtc-chip bg-slate-100 hover:bg-orange-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full transition" data-code="P0103">P0103</button>
+                <button class="dtc-chip bg-slate-100 hover:bg-orange-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full transition" data-code="P0300">P0300</button>
+                <button class="dtc-chip bg-slate-100 hover:bg-orange-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full transition" data-code="P0420">P0420</button>
+                <button class="dtc-chip bg-slate-100 hover:bg-orange-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full transition" data-code="P0171">P0171</button>
+                <button class="dtc-chip bg-slate-100 hover:bg-orange-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full transition" data-code="P0301">P0301</button>
+                <button class="dtc-chip bg-slate-100 hover:bg-orange-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full transition" data-code="P0442">P0442</button>
+                <button class="dtc-chip bg-slate-100 hover:bg-orange-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full transition" data-code="P0135">P0135</button>
+                <button class="dtc-chip bg-slate-100 hover:bg-orange-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full transition" data-code="P0401">P0401</button>
+                <button class="dtc-chip bg-slate-100 hover:bg-orange-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full transition" data-code="P0455">P0455</button>
+                <button class="dtc-chip bg-slate-100 hover:bg-orange-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full transition" data-code="P0700">P0700</button>
+                <button class="dtc-chip bg-slate-100 hover:bg-orange-500 hover:text-white text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full transition" data-code="P0128">P0128</button>
+            </div>
+
+            <!-- RESULT CARD DISPLAY -->
+            <div id="dtc-result-container" class="mt-8 bg-slate-50 border border-slate-200 rounded-xl p-6 hidden">
+                <!-- Injected via JavaScript -->
+            </div>
+        </section>
+
+        <!-- SECCIÓN GUÍAS TÉCNICAS DTC DEDICADAS -->
+        <section class="bg-white p-6 md:p-8 rounded-xl shadow border border-gray-200 space-y-4">
+            <div class="border-b border-gray-200 pb-3 flex flex-col md:flex-row md:items-center justify-between gap-2">
+                <div>
+                    <h2 class="text-2xl font-extrabold text-slate-900">Guías Técnicas de Diagnóstico en Profundidad</h2>
+                    <p class="text-sm text-gray-600">Artículos completos paso a paso con causas, pruebas con multímetro/escáner y soluciones definitivas.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-2">
+                <a href="codigo-p0102.html" class="block p-4 rounded-lg border border-slate-200 hover:border-orange-500 hover:shadow-md transition bg-slate-50">
+                    <span class="bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Sensor MAF</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-2 mb-1">Código P0102: Sensor MAF Entrada Baja</h3>
+                    <p class="text-xs text-slate-600 mb-2">Pruebas de voltaje con multímetro, cableado y limpieza del sensor con spray.</p>
+                    <span class="text-xs font-bold text-orange-600 hover:underline">Ver Guía Completa P0102 →</span>
+                </a>
+
+                <a href="codigo-p0101.html" class="block p-4 rounded-lg border border-slate-200 hover:border-orange-500 hover:shadow-md transition bg-slate-50">
+                    <span class="bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Sensor MAF</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-2 mb-1">Código P0101: Sensor MAF Rango/Rendimiento</h3>
+                    <p class="text-xs text-slate-600 mb-2">Filtros obstruidos, conductos rajados y discordancia con sensor MAP.</p>
+                    <span class="text-xs font-bold text-orange-600 hover:underline">Ver Guía Completa P0101 →</span>
+                </a>
+
+                <a href="codigo-p0103.html" class="block p-4 rounded-lg border border-slate-200 hover:border-orange-500 hover:shadow-md transition bg-slate-50">
+                    <span class="bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Sensor MAF</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-2 mb-1">Código P0103: Sensor MAF Entrada Alta</h3>
+                    <p class="text-xs text-slate-600 mb-2">Cortocircuito a 12V/5V, pérdida de tierra y humo negro por escape.</p>
+                    <span class="text-xs font-bold text-orange-600 hover:underline">Ver Guía Completa P0103 →</span>
+                </a>
+
+                <a href="codigo-p0171.html" class="block p-4 rounded-lg border border-slate-200 hover:border-orange-500 hover:shadow-md transition bg-slate-50">
+                    <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Inyección / Admisión</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-2 mb-1">Código P0171: Mezcla Pobre Banco 1</h3>
+                    <p class="text-xs text-slate-600 mb-2">Fugas de vacío, sensor MAF sucio y bombas de gasolina débiles.</p>
+                    <span class="text-xs font-bold text-orange-600 hover:underline">Ver Guía Completa P0171 →</span>
+                </a>
+
+                <a href="codigo-p0700.html" class="block p-4 rounded-lg border border-slate-200 hover:border-orange-500 hover:shadow-md transition bg-slate-50">
+                    <span class="bg-purple-100 text-purple-800 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Transmisión Automática</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-2 mb-1">Código P0700: Falla en Módulo TCM</h3>
+                    <p class="text-xs text-slate-600 mb-2">Por qué necesitas un escáner multisistema para diagnosticar la caja.</p>
+                    <span class="text-xs font-bold text-orange-600 hover:underline">Ver Guía Completa P0700 →</span>
+                </a>
+
+                <a href="codigo-p0300.html" class="block p-4 rounded-lg border border-slate-200 hover:border-orange-500 hover:shadow-md transition bg-slate-50">
+                    <span class="bg-red-100 text-red-800 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Encendido / Misfire</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-2 mb-1">Código P0300: Fallos de Encendido Múltiple</h3>
+                    <p class="text-xs text-slate-600 mb-2">Bujías, bobinas COP, compresión y peligro para el catalizador.</p>
+                    <span class="text-xs font-bold text-orange-600 hover:underline">Ver Guía Completa P0300 →</span>
+                </a>
+
+                <a href="codigo-p0420.html" class="block p-4 rounded-lg border border-slate-200 hover:border-orange-500 hover:shadow-md transition bg-slate-50">
+                    <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Emisiones / Escape</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-2 mb-1">Código P0420: Eficiencia de Catalizador</h3>
+                    <p class="text-xs text-slate-600 mb-2">Diagnóstico de sensores de oxígeno antes de cambiar el catalizador.</p>
+                    <span class="text-xs font-bold text-orange-600 hover:underline">Ver Guía Completa P0420 →</span>
+                </a>
+
+                <a href="codigo-p0442.html" class="block p-4 rounded-lg border border-slate-200 hover:border-orange-500 hover:shadow-md transition bg-slate-50">
+                    <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Sistema EVAP</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-2 mb-1">Código P0442: Fuga Pequeña EVAP</h3>
+                    <p class="text-xs text-slate-600 mb-2">Fugas en tapón de gasolina, válvula purge y cánister.</p>
+                    <span class="text-xs font-bold text-orange-600 hover:underline">Ver Guía Completa P0442 →</span>
+                </a>
+
+                <a href="codigo-p0500.html" class="block p-4 rounded-lg border border-slate-200 hover:border-orange-500 hover:shadow-md transition bg-slate-50">
+                    <span class="bg-indigo-100 text-indigo-800 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Sensor Velocidad VSS</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-2 mb-1">Código P0500: Falla Sensor VSS</h3>
+                    <p class="text-xs text-slate-600 mb-2">Velocímetro inoperativo, fallas en caja y módulo ABS.</p>
+                    <span class="text-xs font-bold text-orange-600 hover:underline">Ver Guía Completa P0500 →</span>
+                </a>
+
+                <a href="codigo-p0113.html" class="block p-4 rounded-lg border border-slate-200 hover:border-orange-500 hover:shadow-md transition bg-slate-50">
+                    <span class="bg-blue-100 text-blue-800 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Sensor Temp IAT</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-2 mb-1">Código P0113: Sensor IAT Circuito Alto</h3>
+                    <p class="text-xs text-slate-600 mb-2">Lectura a -40°C, pruebas de resistencia con multímetro.</p>
+                    <span class="text-xs font-bold text-orange-600 hover:underline">Ver Guía Completa P0113 →</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN GUÍA PASO A PASO -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow border border-gray-200">
+                <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center font-bold text-xl mb-3">1</div>
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Conecta tu Escáner OBD2</h3>
+                <p class="text-xs text-gray-600 leading-relaxed">Ubica el puerto OBD2 debajo del volante de tu auto (obligatorio en todos los modelos desde 1996 en adelante).</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow border border-gray-200">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center font-bold text-xl mb-3">2</div>
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Lee los Códigos de Falla</h3>
+                <p class="text-xs text-gray-600 leading-relaxed">Gira la llave a posición "ON" sin encender el motor y escanea los módulos de Motor, ABS y Transmisión.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow border border-gray-200">
+                <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center font-bold text-xl mb-3">3</div>
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Borra el Check Engine</h3>
+                <p class="text-xs text-gray-600 leading-relaxed">Una vez corregida la causa mecánica (bujía, tapa de gasolina o sensor), borra el código y realiza una prueba de manejo.</p>
+            </div>
+        </section>
+
+        <!-- TOP ESCÁNERES PARA BORRAR CÓDIGOS -->
+        <section class="space-y-6">
+            <h2 class="text-2xl font-extrabold text-slate-900">Escáneres Recomendados para Diagnosticar y Borrar Códigos DTC</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- ESCANER 1 -->
+                <div class="bg-white p-6 rounded-xl shadow border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <span class="bg-green-100 text-green-800 text-xs font-bold px-2.5 py-1 rounded">Económico Rápido</span>
+                        <h3 class="font-bold text-slate-900 text-lg mt-2">Autel MaxiScan MS309 OBD2</h3>
+                        <p class="text-xs text-gray-600 mt-1 mb-3">Lee y borra códigos de motor en segundos. Muestra definiciones DTC directamente en pantalla. Muestra datos congelados de la computadora.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=Autel+MaxiScan+MS309+OBD2&tag=herramien044f-21" target="_blank" rel="sponsored nofollow noopener" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 px-4 rounded text-center text-sm shadow transition">
+                        <i class="fab fa-amazon"></i> Ver Oferta Autel MS309 en Amazon
+                    </a>
+                </div>
+
+                <!-- ESCANER 2 -->
+                <div class="bg-white p-6 rounded-xl shadow border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <span class="bg-orange-100 text-orange-800 text-xs font-bold px-2.5 py-1 rounded">Recomendado Taller</span>
+                        <h3 class="font-bold text-slate-900 text-lg mt-2">Launch CRP123X OBD2 Scanner</h3>
+                        <p class="text-xs text-gray-600 mt-1 mb-3">Diagnóstico completo de 4 sistemas (Motor, ABS, Airbags SRS y Transmisión). Pantalla táctil Android con actualizaciones gratuitas por WiFi.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=Launch+CRP123X+Pro+escaner+automotriz&tag=herramien044f-21" target="_blank" rel="sponsored nofollow noopener" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 px-4 rounded text-center text-sm shadow transition">
+                        <i class="fab fa-amazon"></i> Ver Oferta Launch CRP123X en Amazon
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PREGUNTAS FRECUENTES SOBRE CÓDIGOS DTC -->
+        <section class="bg-white p-6 md:p-8 rounded-xl shadow border border-gray-200">
+            <h2 class="text-2xl font-extrabold text-slate-900 mb-6 flex items-center gap-2">
+                <i class="fas fa-question-circle text-orange-500"></i> Preguntas Frecuentes sobre Diagnóstico OBD2
+            </h2>
+            <div class="space-y-4">
+                <div class="border border-slate-200 rounded-lg p-4 bg-slate-50">
+                    <h3 class="font-bold text-slate-800 mb-1">¿Qué diferencia hay entre un código 'Genérico' y uno 'Específico del Fabricante'?</h3>
+                    <p class="text-sm text-slate-600">Los códigos que inician con <strong>P0xxx</strong> son estándar y universales para todas las marcas (regulados por la SAE). Los códigos que inician con <strong>P1xxx, P2xxx o P3xxx</strong> son específicos de cada marca (Ford, Toyota, BMW, etc.) y requieren un escáner con base de datos del fabricante.</p>
+                </div>
+                <div class="border border-slate-200 rounded-lg p-4 bg-slate-50">
+                    <h3 class="font-bold text-slate-800 mb-1">¿Borrar el código soluciona la falla del motor?</h3>
+                    <p class="text-sm text-slate-600">No. Borrar el código solo apaga la luz testigo del tablero y reinicia los monitores I/M. Si no se repara físicamente el sensor o componente averiado, la computadora de a bordo (ECU) volverá a detectar la anomalía en el siguiente ciclo de conducción (Drive Cycle) y encenderá la luz de nuevo.</p>
+                </div>
+                <div class="border border-slate-200 rounded-lg p-4 bg-slate-50">
+                    <h3 class="font-bold text-slate-800 mb-1">¿Qué significa cuando la luz Check Engine parpadea (flashing)?</h3>
+                    <p class="text-sm text-slate-600">Indica un <strong>fallo de encendido severo (Misfire crítico)</strong> que está arrojando gasolina cruda al sistema de escape, sobrecalentando y destruyendo el catalizador en pocos minutos. Debes detener la marcha de inmediato y no seguir conduciendo.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MOBILE STICKY CTA BAR -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-slate-900 border-t border-slate-700 p-3 flex items-center justify-between z-50 shadow-lg">
+        <div class="text-white text-xs">
+            <span class="font-bold text-orange-400 block">Autel MaxiScan MS309</span>
+            <span>Apaga la luz Check Engine ($)</span>
+        </div>
+        <a href="https://www.amazon.es/s?k=Autel+MaxiScan+MS309+OBD2&tag=herramien044f-21" target="_blank" rel="sponsored nofollow noopener" class="bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2 px-3 rounded shadow">
+            Ver en Amazon <i class="fas fa-arrow-right ml-1"></i>
+        </a>
+    </div>
+
+    <!-- FOOTER CON AVISO LEGAL AMZAON OBLIGATORIO -->
+    <footer class="bg-slate-900 text-slate-400 py-10 mt-16 border-t-4 border-orange-500">
+        <div class="container space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-2">Herramientas Automotrices Pro</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Guías de compra independientes, pruebas comparativas y recomendaciones para mecánicos profesionales y aficionados.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-2 uppercase">Categorías Principales</h4>
+                    <ul class="text-xs space-y-1">
+                        <li><a href="scanners.html" class="hover:text-orange-400">Scanners Automotrices OBD2</a></li>
+                        <li><a href="multimetros-automotrices.html" class="hover:text-orange-400">Multímetros Digitales</a></li>
+                        <li><a href="arrancadores-bateria.html" class="hover:text-orange-400">Arrancadores de Batería</a></li>
+                        <li><a href="codigos-obd2.html" class="hover:text-orange-400">Buscador Códigos OBD2</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-2 uppercase">Información Legal</h4>
+                    <ul class="text-xs space-y-1">
+                        <li><a href="privacy-policy.html" class="hover:text-orange-400">Política de Privacidad</a></li>
+                        <li><a href="terms-of-service.html" class="hover:text-orange-400">Términos de Servicio</a></li>
+                        <li><a href="cookies-policy.html" class="hover:text-orange-400">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- DECLARACIÓN DE AFILIADO DE AMAZON STRICT COMPLIANCE -->
+            <div class="bg-slate-800 p-4 rounded-lg text-xs text-slate-300 leading-relaxed border border-slate-700">
+                <p class="font-bold text-white mb-1"><i class="fab fa-amazon text-orange-400"></i> Divulgación de Afiliados de Amazon:</p>
+                <p>
+                    Herramientas Automotrices Pro participa en el Programa de Afiliados de Amazon Services LLC, un programa publicitario de afiliados diseñado para proporcionar un medio para que los sitios web obtengan comisiones por publicidad al anunciar y vincular a Amazon.com. Las marcas y logotipos de Amazon son propiedad de Amazon.com, Inc. o sus filiales. Los precios y la disponibilidad de los productos son precisos a la fecha mostrada y están sujetos a cambios.
+                </p>
+            </div>
+
+            <div class="text-center text-xs text-slate-500 pt-4 border-t border-slate-800">
+                <p>© 2026 Herramientas Automotrices Pro. Todos los derechos reservados. • <span class="text-slate-400">Desarrollado por <a href="https://www.linkedin.com/in/reinaldo-duran-castro" target="_blank" rel="noopener noreferrer" class="text-slate-300 underline hover:text-orange-400">Reinaldo Durán Castro <i class="fab fa-linkedin text-[#0077b5]"></i></a></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=3.0"></script>
+</body>
+</html>
