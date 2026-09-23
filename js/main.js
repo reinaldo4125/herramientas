@@ -351,6 +351,14 @@ function initHerramientasApp() {
                 fix: 'Reemplazar termostato y purgar el sistema de refrigeración con anticongelante 50/50.',
                 scanner: 'Autel MS309',
                 link: 'https://www.amazon.es/s?k=Autel+MaxiScan+MS309+OBD2&tag=herramien044f-21'
+            },
+            'P0301': {
+                title: 'Fallo de Encendido Detectado en Cilindro 1 (Misfire)',
+                severity: 'Alta (Peligro de daño en convertidor catalítico por gasolina cruda)',
+                causes: ['Bobina de encendido quemada', 'Bujía desgastada con electrodo quemado', 'Inyector obstruido o baja compresión'],
+                fix: 'Intercambiar bobina con el cilindro 2 para confirmar; reemplazar bujía y comprobar compresión si persiste.',
+                scanner: 'Launch CRP123X',
+                link: 'https://www.amazon.es/s?k=Launch+CRP123X+Pro+escaner+automotriz&tag=herramien044f-21'
             }
         };
 
@@ -572,7 +580,35 @@ function initHerramientasApp() {
     }
 
     // ========================================
-    // 7. BARRA FLOTANTE DE CONVERSIÓN MÓVIL (STICKY CTA)
+    // 7. ASISTENTE / QUIZ INTERACTIVO DE ESCÁNERES
+    // ========================================
+    try {
+        const quizBtns = document.querySelectorAll('.scanner-quiz-btn');
+        quizBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                quizBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-orange-500', 'text-white');
+                    b.classList.add('bg-slate-800', 'text-slate-300');
+                });
+                this.classList.add('active', 'bg-orange-500', 'text-white');
+                this.classList.remove('bg-slate-800', 'text-slate-300');
+
+                document.querySelectorAll('.quiz-panel').forEach(panel => {
+                    panel.classList.add('hidden');
+                });
+                const targetPanel = document.getElementById(targetId);
+                if (targetPanel) {
+                    targetPanel.classList.remove('hidden');
+                }
+            });
+        });
+    } catch (e) {
+        console.error('Error en scanner quiz:', e);
+    }
+
+    // ========================================
+    // 8. BARRA FLOTANTE DE CONVERSIÓN MÓVIL (STICKY CTA)
     // ========================================
     try {
         if (!document.getElementById('mobile-sticky-cta')) {
