@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200">
+  <defs>
+    <linearGradient id="bgComp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="200" rx="16" fill="url(#bgComp)"/>
+  <!-- Tank cylinder -->
+  <rect x="60" y="70" width="180" height="70" rx="25" fill="#2563eb" stroke="#1d4ed8" stroke-width="3"/>
+  <!-- Motor on top -->
+  <rect x="110" y="40" width="70" height="35" rx="6" fill="#475569"/>
+  <!-- Pressure Gauge -->
+  <circle cx="195" cy="55" r="12" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>
+  <line x1="195" y1="55" x2="201" y2="50" stroke="#dc2626" stroke-width="2"/>
+  <!-- Wheels -->
+  <circle cx="85" cy="148" r="14" fill="#0f172a" stroke="#64748b" stroke-width="4"/>
+  <circle cx="215" cy="148" r="14" fill="#0f172a" stroke="#64748b" stroke-width="4"/>
+  <text x="160" y="185" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#f8fafc" text-anchor="middle">COMPRESOR TALLER 50L • 10 BAR</text>
+</svg>

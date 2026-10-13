@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="dongleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#27272a"/>
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" rx="16" fill="url(#bgTop)"/>
+
+  <!-- Phone Mockup on Left showing TopScan App -->
+  <g transform="translate(40, 45)">
+    <rect x="0" y="0" width="110" height="210" rx="16" fill="#020617" stroke="#475569" stroke-width="3"/>
+    <rect x="8" y="14" width="94" height="182" rx="10" fill="#0f172a"/>
+    <!-- App UI -->
+    <rect x="8" y="14" width="94" height="24" fill="#0284c7"/>
+    <text x="55" y="30" font-family="system-ui, sans-serif" font-weight="800" font-size="9" fill="#ffffff" text-anchor="middle">TopScan App</text>
+    
+    <rect x="14" y="46" width="82" height="24" rx="4" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+    <text x="55" y="61" font-family="system-ui, sans-serif" font-weight="700" font-size="8" fill="#38bdf8" text-anchor="middle">Active Test (Bi-Dir)</text>
+
+    <rect x="14" y="76" width="82" height="24" rx="4" fill="#1e293b"/>
+    <text x="55" y="91" font-family="system-ui, sans-serif" font-weight="700" font-size="8" fill="#f8fafc" text-anchor="middle">Todos los Sistemas</text>
+
+    <rect x="14" y="106" width="82" height="24" rx="4" fill="#1e293b"/>
+    <text x="55" y="121" font-family="system-ui, sans-serif" font-weight="700" font-size="8" fill="#f8fafc" text-anchor="middle">8+ Resets Servicio</text>
+
+    <!-- Bluetooth Connected wave -->
+    <circle cx="55" cy="155" r="14" fill="#0284c7" opacity="0.3"/>
+    <circle cx="55" cy="155" r="8" fill="#0284c7"/>
+    <path d="M 53 150 L 57 155 L 53 160 M 55 147 L 55 163" stroke="#fff" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Wireless Connection Waves -->
+  <path d="M 165 140 Q 185 130 185 150 Q 185 170 165 160" fill="none" stroke="#38bdf8" stroke-width="3" stroke-dasharray="4 4"/>
+  <path d="M 175 130 Q 200 120 200 150 Q 200 180 175 170" fill="none" stroke="#38bdf8" stroke-width="3" stroke-dasharray="4 4"/>
+
+  <!-- TOPDON TopScan Bluetooth Dongle Unit on Right -->
+  <g transform="translate(205, 55)">
+    <!-- 16-pin OBD2 Connector Head -->
+    <path d="M 30 15 L 120 15 L 130 45 L 20 45 Z" fill="#334155" stroke="#475569" stroke-width="2"/>
+    <!-- Metal Pins representation -->
+    <line x1="35" y1="28" x2="115" y2="28" stroke="#facc15" stroke-width="3" stroke-dasharray="4 5"/>
+
+    <!-- Dongle Main Ergonomic Body -->
+    <rect x="15" y="45" width="120" height="145" rx="16" fill="url(#dongleGrad)" stroke="#3f3f46" stroke-width="3"/>
+    <!-- Blue/Orange Accent Wave -->
+    <path d="M 15 105 Q 75 125 135 105 L 135 118 Q 75 138 15 118 Z" fill="url(#blueAccent)"/>
+
+    <!-- Brand and Model -->
+    <text x="75" y="78" font-family="system-ui, sans-serif" font-weight="900" font-size="18" fill="#f8fafc" text-anchor="middle" letter-spacing="1">TOPDON</text>
+    <text x="75" y="98" font-family="system-ui, sans-serif" font-weight="800" font-size="13" fill="#38bdf8" text-anchor="middle">TopScan</text>
+
+    <!-- Status LEDs -->
+    <circle cx="45" cy="148" r="5" fill="#22c55e"/>
+    <text x="45" y="165" font-family="system-ui, sans-serif" font-weight="700" font-size="7" fill="#94a3b8" text-anchor="middle">PWR</text>
+
+    <circle cx="75" cy="148" r="5" fill="#38bdf8"/>
+    <text x="75" y="165" font-family="system-ui, sans-serif" font-weight="700" font-size="7" fill="#94a3b8" text-anchor="middle">BLE</text>
+
+    <circle cx="105" cy="148" r="5" fill="#f59e0b"/>
+    <text x="105" y="165" font-family="system-ui, sans-serif" font-weight="700" font-size="7" fill="#94a3b8" text-anchor="middle">COMM</text>
+
+    <!-- Bluetooth Logo -->
+    <path d="M 73 173 L 77 176 L 73 179 M 75 170 L 75 182" stroke="#38bdf8" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Bottom Title -->
+  <text x="200" y="280" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#cbd5e1" text-anchor="middle">TOPDON TopScan • Escáner Bluetooth Bidireccional iOS/Android</text>
+</svg>

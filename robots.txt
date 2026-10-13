@@ -1,6 +1,4 @@
 # Herramientas Automotrices Pro - robots.txt
-# Last Updated: February 20, 2026
-
 # Permitir a todos los bots legítimos
 User-agent: *
 Allow: /
@@ -10,23 +8,7 @@ Disallow: /temp/
 Disallow: /*.pdf$
 Disallow: /node_modules/
 
-# Google Bot específico
-User-agent: Googlebot
-Allow: /
-
-# Baidu Bot
-User-agent: Baiduspider
-Allow: /
-
-# Yandex Bot
-User-agent: YandexBot
-Allow: /
-
-# Bing Bot
-User-agent: Bingbot
-Allow: /
-
-# Bloquear scraper comerciales y bots maliciosos
+# Bloquear scrapers comerciales invasivos
 User-agent: MJ12bot
 Disallow: /
 
@@ -39,9 +21,5 @@ Disallow: /
 User-agent: DotBot
 Disallow: /
 
-# Velocidad de crawl para Googlebot (opcional)
-User-agent: Googlebot
-Crawl-delay: 1
-
-# Señalar al sitemap
+# Sitemap Oficial
 Sitemap: https://herramientasautomotricespro.com/sitemap.xml

@@ -536,18 +536,18 @@ function initHerramientasApp() {
             const data = roiDatabase[key] || roiDatabase['checkengine'];
             const savings = data.shop - data.tool;
 
-            if (roiShopCost) roiShopCost.textContent = `$${data.shop} USD`;
-            if (roiToolCost) roiToolCost.textContent = `$${data.tool} USD`;
-            if (roiSavings) roiSavings.textContent = `$${savings} USD`;
+            if (roiShopCost) roiShopCost.textContent = `${data.shop} €`;
+            if (roiToolCost) roiToolCost.textContent = `${data.tool} €`;
+            if (roiSavings) roiSavings.textContent = `${savings} €`;
 
             roiResultBox.innerHTML = `
                 <span class="bg-emerald-500/20 text-emerald-300 text-xs font-bold px-2.5 py-1 rounded-full uppercase border border-emerald-500/30">
-                    <i class="fas fa-piggy-bank"></i> Te Ahorras $${savings} USD desde el 1er uso
+                    <i class="fas fa-piggy-bank"></i> Te Ahorras ${savings} € desde el 1er uso
                 </span>
                 <h4 class="font-extrabold text-white text-base mt-2">${data.toolName}</h4>
                 <p class="text-xs text-slate-300 leading-relaxed">${data.desc}</p>
                 <a href="${data.link}" target="_blank" rel="sponsored nofollow noopener" class="mt-3 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-lg text-xs shadow-lg transition flex items-center justify-center gap-2">
-                    <i class="fab fa-amazon"></i> 🔥 Comprar en Amazon ($${data.tool} USD) y Ahorrar
+                    <i class="fab fa-amazon"></i> 🔥 Comprar en Amazon (${data.tool} €) y Ahorrar
                 </a>
             `;
         }

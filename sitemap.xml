@@ -8,7 +8,7 @@
   <!-- Homepage - Prioridad Máxima -->
   <url>
     <loc>https://herramientasautomotricespro.com/</loc>
-    <lastmod>2026-02-20</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -16,15 +16,15 @@
   <!-- Acerca de Nosotros -->
   <url>
     <loc>https://herramientasautomotricespro.com/about-us.html</loc>
-    <lastmod>2026-02-20</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
 
   <!-- Contacto -->
   <url>
     <loc>https://herramientasautomotricespro.com/contact.html</loc>
-    <lastmod>2026-02-20</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -32,37 +32,37 @@
   <!-- Artículos - Páginas Principales (Prioridad Alta) -->
   <url>
     <loc>https://herramientasautomotricespro.com/scanners.html</loc>
-    <lastmod>2026-02-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
   </url>
 
   <url>
     <loc>https://herramientasautomotricespro.com/llaves-impacto.html</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://herramientasautomotricespro.com/comparativas.html</loc>
-    <lastmod>2026-02-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://herramientasautomotricespro.com/multimetros-automotrices.html</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://herramientasautomotricespro.com/autel-vs-launch.html</loc>
-    <lastmod>2026-02-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
   </url>
 
   <url>
@@ -206,6 +206,13 @@
   </url>
 
   <url>
+    <loc>https://herramientasautomotricespro.com/arrancadores-bateria.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://herramientasautomotricespro.com/boroscopios-automotrices.html</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -231,6 +238,13 @@
     <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://herramientasautomotricespro.com/mejores-herramientas-mecanicos-2024.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- Páginas Legales (Prioridad Media) -->

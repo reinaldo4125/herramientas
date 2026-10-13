@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <defs>
+    <linearGradient id="bgB2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" rx="16" fill="url(#bgB2)"/>
+  <circle cx="200" cy="105" r="45" fill="#047857" stroke="#34d399" stroke-width="4"/>
+  <path d="M 185 105 L 195 115 L 215 95" fill="none" stroke="#f8fafc" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="175" font-family="system-ui, sans-serif" font-weight="900" font-size="20" fill="#f8fafc" text-anchor="middle">GUÍA OBD2 BÁSICA</text>
+  <text x="200" y="198" font-family="system-ui, sans-serif" font-weight="600" font-size="13" fill="#6ee7b7" text-anchor="middle">Aprende a leer y borrar códigos de fallo</text>
+</svg>

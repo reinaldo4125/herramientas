@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <defs>
+    <linearGradient id="bgB1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" rx="16" fill="url(#bgB1)"/>
+  <text x="200" y="60" font-family="system-ui, sans-serif" font-weight="900" font-size="24" fill="#f8fafc" text-anchor="middle">TOPDON vs LAUNCH</text>
+  <text x="200" y="85" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#f59e0b" text-anchor="middle">Comparativa de Escáneres 2026</text>
+  <rect x="50" y="110" width="130" height="90" rx="10" fill="#1e1b4b" stroke="#6366f1" stroke-width="3"/>
+  <text x="115" y="150" font-family="system-ui, sans-serif" font-weight="800" font-size="15" fill="#a5b4fc" text-anchor="middle">TopScan</text>
+  <text x="115" y="170" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#c7d2fe" text-anchor="middle">Bluetooth Portátil</text>
+  <text x="200" y="160" font-family="system-ui, sans-serif" font-weight="900" font-size="24" fill="#f43f5e" text-anchor="middle">VS</text>
+  <rect x="220" y="110" width="130" height="90" rx="10" fill="#1e293b" stroke="#f97316" stroke-width="3"/>
+  <text x="285" y="150" font-family="system-ui, sans-serif" font-weight="800" font-size="15" fill="#fdba74" text-anchor="middle">CRP123X</text>
+  <text x="285" y="170" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#fed7aa" text-anchor="middle">4 Sistemas Autónomo</text>
+</svg>

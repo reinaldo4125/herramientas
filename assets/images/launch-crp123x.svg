@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgLaunch" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="redCase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" rx="16" fill="url(#bgLaunch)"/>
+
+  <!-- Top OBD-II Thick Cable -->
+  <path d="M 200 45 L 200 20 C 200 12, 160 12, 160 20 L 160 30" fill="none" stroke="#334155" stroke-width="12" stroke-linecap="round"/>
+  <rect x="180" y="32" width="40" height="15" rx="4" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+
+  <!-- Main Handheld Tablet Body -->
+  <rect x="50" y="45" width="300" height="210" rx="20" fill="url(#redCase)" stroke="#7f1d1d" stroke-width="4"/>
+  <!-- Rubberized Grip Corners -->
+  <path d="M 50 65 Q 50 45 70 45 L 90 45 L 50 85 Z" fill="#0f172a"/>
+  <path d="M 350 65 Q 350 45 330 45 L 310 45 L 350 85 Z" fill="#0f172a"/>
+  <path d="M 50 235 Q 50 255 70 255 L 90 255 L 50 215 Z" fill="#0f172a"/>
+  <path d="M 350 235 Q 350 255 330 255 L 310 255 L 350 215 Z" fill="#0f172a"/>
+
+  <!-- Brand Header -->
+  <text x="180" y="70" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#f8fafc" letter-spacing="1">LAUNCH</text>
+  <text x="245" y="70" font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#fef08a">CRP123X Pro</text>
+
+  <!-- 5.0" HD Screen Area -->
+  <rect x="70" y="80" width="200" height="155" rx="8" fill="url(#screenGrad)" stroke="#0f172a" stroke-width="4"/>
+
+  <!-- Screen UI: 4 Systems Diagnostic Grid -->
+  <!-- Header bar -->
+  <rect x="72" y="82" width="196" height="22" fill="#1e293b"/>
+  <text x="80" y="97" font-family="system-ui, sans-serif" font-weight="700" font-size="10" fill="#38bdf8">DIAGNÓSTICO 4 SISTEMAS</text>
+  <text x="250" y="97" font-family="system-ui, sans-serif" font-weight="700" font-size="9" fill="#22c55e" text-anchor="end">Wi-Fi OK</text>
+
+  <!-- 4 Systems Badges inside screen -->
+  <rect x="80" y="112" width="85" height="28" rx="4" fill="#047857"/>
+  <text x="122" y="130" font-family="system-ui, sans-serif" font-weight="800" font-size="10" fill="#ffffff" text-anchor="middle">MOTOR (ECM)</text>
+
+  <rect x="175" y="112" width="85" height="28" rx="4" fill="#1d4ed8"/>
+  <text x="217" y="130" font-family="system-ui, sans-serif" font-weight="800" font-size="10" fill="#ffffff" text-anchor="middle">CAJA (TCM)</text>
+
+  <rect x="80" y="148" width="85" height="28" rx="4" fill="#b45309"/>
+  <text x="122" y="166" font-family="system-ui, sans-serif" font-weight="800" font-size="10" fill="#ffffff" text-anchor="middle">FRENOS (ABS)</text>
+
+  <rect x="175" y="148" width="85" height="28" rx="4" fill="#b91c1c"/>
+  <text x="217" y="166" font-family="system-ui, sans-serif" font-weight="800" font-size="10" fill="#ffffff" text-anchor="middle">AIRBAG (SRS)</text>
+
+  <!-- Mini live graph line at bottom of screen -->
+  <path d="M 85 215 L 110 200 L 140 220 L 170 195 L 200 205 L 230 190 L 255 210" fill="none" stroke="#22c55e" stroke-width="2"/>
+  <text x="85" y="195" font-family="system-ui, sans-serif" font-weight="600" font-size="8" fill="#94a3b8">Gráfica Live Data 4-en-1</text>
+
+  <!-- Right Physical Buttons -->
+  <g transform="translate(285, 90)">
+    <rect x="0" y="0" width="50" height="22" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <text x="25" y="15" font-family="system-ui, sans-serif" font-weight="800" font-size="9" fill="#f8fafc" text-anchor="middle">OK</text>
+
+    <rect x="0" y="30" width="50" height="22" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <text x="25" y="45" font-family="system-ui, sans-serif" font-weight="800" font-size="9" fill="#f8fafc" text-anchor="middle">ESC</text>
+
+    <circle cx="25" cy="78" r="14" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <path d="M 25 68 L 29 74 L 21 74 Z M 25 88 L 29 82 L 21 82 Z" fill="#94a3b8"/>
+
+    <rect x="0" y="108" width="50" height="22" rx="4" fill="#0f172a" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="25" y="123" font-family="system-ui, sans-serif" font-weight="800" font-size="9" fill="#ef4444" text-anchor="middle">AutoVIN</text>
+  </g>
+
+  <!-- Bottom Label -->
+  <text x="200" y="280" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#cbd5e1" text-anchor="middle">Launch Creader Professional 123X Pro • 5" Táctil Android</text>
+</svg>

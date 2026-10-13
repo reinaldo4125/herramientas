@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200">
+  <defs>
+    <linearGradient id="bgBoro" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="200" rx="16" fill="url(#bgBoro)"/>
+  <!-- Handheld unit -->
+  <rect x="50" y="35" width="130" height="130" rx="12" fill="#020617" stroke="#f97316" stroke-width="3"/>
+  <rect x="65" y="48" width="100" height="75" rx="6" fill="#1e293b"/>
+  <!-- Engine piston icon inside screen -->
+  <circle cx="115" cy="85" r="22" fill="none" stroke="#38bdf8" stroke-width="4"/>
+  <path d="M 115 65 L 115 105 M 95 85 L 135 85" stroke="#38bdf8" stroke-width="2"/>
+  <text x="115" y="145" font-family="system-ui, sans-serif" font-weight="700" font-size="10" fill="#f8fafc" text-anchor="middle">DEPSTECH 1080P</text>
+  <!-- Flexible snake cable -->
+  <path d="M 180 60 C 230 40, 240 140, 270 110 C 285 95, 270 70, 290 60" fill="none" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="290" cy="60" r="9" fill="#f97316"/>
+  <circle cx="290" cy="60" r="5" fill="#f8fafc"/>
+</svg>
